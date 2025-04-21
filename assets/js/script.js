@@ -91,7 +91,7 @@ $(document).ready(function () {
 });
 // -------------------------Type word animation
 document.addEventListener("DOMContentLoaded", function () {
-  const txt = ["Photographer", "Video Editor", "UI/UX Designer"];
+  const txt = ["Photographer", "Video Editor", "Graphic Designer"];
   let i = 0,
     j = 0;
   let end = false;
