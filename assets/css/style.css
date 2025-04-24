@@ -1318,7 +1318,9 @@ li.slick-active {
 }
 .item-port .img img {
     width: 100%;
-    height: auto;
+    height: 100%;            /* fill the container */
+    object-fit: contain;     /* scale entire image in, no crop */
+    object-position: center; /* center it */
     transition: .3s ease-in-out;
 }
 .item-port .img a.link {
