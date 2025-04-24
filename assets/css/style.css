@@ -1297,10 +1297,8 @@ li.slick-active {
     padding: 0;
 }
 .item-port .img {
-    width: 100%;             /* will fill its column up to max-width */
-    max-width: 800px;        /* never wider than 800px */
-    max-height: 1000px;      /* never taller than 1000px */
-    margin: 0 auto;          /* center if it’s narrower than the column */
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Keeps 800x1000 shape */
     overflow: hidden;
     position: relative;
     background-color: #f0f0f0;
@@ -1320,9 +1318,10 @@ li.slick-active {
 }
 .item-port .img img {
     width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+    height: 100%;            /* fill the container */
+    object-fit: contain;     /* scale entire image in, no crop */
+    object-position: center; /* center it */
+    transition: .3s ease-in-out;
 }
 .item-port .img a.link {
     position: absolute;
