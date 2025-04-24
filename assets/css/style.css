@@ -1298,12 +1298,11 @@ li.slick-active {
 }
 .item-port .img {
     width: 100%;
-    aspect-ratio: 4 / 5;       /* enforces 800×1000 shape */
-    max-height: 1000px;        /* optional hard cap */
-    background-color: #f0f0f0; /* backdrop for any letterboxing */
+    aspect-ratio: 4 / 5; /* Keeps 800x1000 shape */
+    overflow: hidden;
     position: relative;
-    /* overflow: hidden; */     /* you can leave this commented or remove */
-  }
+    background-color: #f0f0f0;
+}
 .item-port .img:hover img {
     transform: scale(1.1);
     filter: blur(3px);
