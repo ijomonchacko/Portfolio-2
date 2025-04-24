@@ -1296,14 +1296,22 @@ li.slick-active {
     position: relative;
     padding: 0;
 }
-
-    .item-port .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;      /* scales entire image in box */
-  object-position: center;  /* centers in both directions */
-  transition: transform .3s ease-in-out;
-}
+.item-port .img {
+    width: 100%;
+    aspect-ratio: 4 / 5;       /* enforces 800×1000 shape */
+    max-height: 1000px;        /* optional hard cap */
+    background-color: #f0f0f0; /* backdrop for any letterboxing */
+    position: relative;
+    /* overflow: hidden; */     /* you can leave this commented or remove */
+  }
+  
+  .item-port .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;       /* entire image always visible */
+    object-position: center;   /* centered within the box */
+    transition: none;          /* no hover transform */
+  }
 .item-port .img:hover img {
     transform: scale(1.1);
     filter: blur(3px);
