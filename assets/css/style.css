@@ -1304,14 +1304,6 @@ li.slick-active {
     position: relative;
     /* overflow: hidden; */     /* you can leave this commented or remove */
   }
-  
-  .item-port .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;       /* entire image always visible */
-    object-position: center;   /* centered within the box */
-    transition: none;          /* no hover transform */
-  }
 .item-port .img:hover img {
     transform: scale(1.1);
     filter: blur(3px);
