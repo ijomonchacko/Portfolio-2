@@ -83,17 +83,17 @@
 	Common Slider Styles
 ---------------------------------------------------*/	
 	
-	.show-loader .clapat-slider {
+	.show-loader .aryanjacob.in-slider {
 		pointer-events:none;
 	}
 
-	.clapat-slider-wrapper {
+	.aryanjacob.in-slider-wrapper {
 		width:100%;
 		height: 100vh;
 		position:relative;	
 	}
 
-	.clapat-slider {
+	.aryanjacob.in-slider {
 		position:absolute;
 		left:0;
 		top:0;
@@ -109,35 +109,35 @@
 		box-sizing:border-box;
 	}
 	
-	.clapat-state-dragging .clapat-slider {
+	.aryanjacob.in-state-dragging .aryanjacob.in-slider {
 		cursor:grabbing;
 	}
 	
-	.clapat-state-dragging .clapat-slider .clapat-slide {
+	.aryanjacob.in-state-dragging .aryanjacob.in-slider .aryanjacob.in-slide {
 		cursor:grabbing;
 		pointer-events:none;
 	}
 	
-	.clapat-state-dragging .cp-button-prev, .clapat-state-dragging .cp-button-next {
+	.aryanjacob.in-state-dragging .cp-button-prev, .aryanjacob.in-state-dragging .cp-button-next {
 		pointer-events:none;
 	}
 	
-	.clapat-slider-viewport {
+	.aryanjacob.in-slider-viewport {
 		display: flex;
 		position: relative;
 	}
 	
-	.clapat-slide {
+	.aryanjacob.in-slide {
 		overflow: hidden;
 		width: 16vw;
 		box-sizing:border-box;
 	}
 	
-	.clapat-slide:first-child {
+	.aryanjacob.in-slide:first-child {
 		position: relative;
 	}
 	
-	.clapat-slide:not(:first-child) {
+	.aryanjacob.in-slide:not(:first-child) {
 		position: absolute;
 		height: 100%;
 	}
@@ -148,12 +148,12 @@
 		cursor:pointer;
 	}
 	
-	.clapat-state-dragging .clapat-slider .slide-inner-height {
+	.aryanjacob.in-state-dragging .aryanjacob.in-slider .slide-inner-height {
 		cursor:grabbing;
 		pointer-events:none;
 	}
 	
-	.clapat-state-dragging .clapat-slider .slide-inner-height {
+	.aryanjacob.in-state-dragging .aryanjacob.in-slider .slide-inner-height {
 		cursor:grabbing;
 		pointer-events:none;
 	}
@@ -179,7 +179,7 @@
 		overflow:hidden;
 	}
 	
-	.clapat-slide .img-mask {
+	.aryanjacob.in-slide .img-mask {
 		background: transparent;
 	}
 	
@@ -206,7 +206,7 @@
 		object-fit: cover;
 	}
 	
-	.clapat-slider img {
+	.aryanjacob.in-slider img {
 		pointer-events:none;
 	}
 	
@@ -316,11 +316,11 @@
 		filter: invert(0);
 	}
 		
-	.disable-scroll .clapat-slider {
+	.disable-scroll .aryanjacob.in-slider {
 		pointer-events:none;
 	}
 	
-	.clapat-pagination {
+	.aryanjacob.in-pagination {
 		width: 100%;
 		height: 40px;
 		display: flex;
@@ -337,7 +337,7 @@
 		pointer-events:none;
 	}
 	
-	.clapat-pagination-bullet {
+	.aryanjacob.in-pagination-bullet {
 		position:relative;
 		width: 40px;
 		height: 40px;
@@ -485,23 +485,23 @@
 ---------------------------------------------------*/
 
 	
-	.highlights-gallery .clapat-slider {
+	.highlights-gallery .aryanjacob.in-slider {
 		padding:25vh 0 25vh 0;
 		padding:25dvh 0 25dvh 0;
 	}
 	
-	.showcase-carousel .clapat-slider-viewport {
+	.showcase-carousel .aryanjacob.in-slider-viewport {
 		z-index:10;
 	}
 	
-	.highlights-gallery .clapat-slide {
+	.highlights-gallery .aryanjacob.in-slide {
 		width:100vw;
 		height:50vh;
 		height:50dvh;
 		opacity:0;
 	}
 	
-	.highlights-gallery .clapat-caption-wrapper {
+	.highlights-gallery .aryanjacob.in-caption-wrapper {
 		position:absolute;
 		width: 100%;
 		height: 100%;
@@ -593,15 +593,15 @@
 	
 	
 	
-	.showcase-gallery .clapat-slider {
+	.showcase-gallery .aryanjacob.in-slider {
 		padding:0 20vw 0 20vw;
 	}
 	
-	.showcase-gallery .clapat-slider-viewport {
+	.showcase-gallery .aryanjacob.in-slider-viewport {
 		z-index:10;
 	}
 	
-	.showcase-gallery .clapat-slide {
+	.showcase-gallery .aryanjacob.in-slide {
 		width: 60vw;
 		height:100vh;
 		box-sizing:border-box;
@@ -613,7 +613,7 @@
 		pointer-events:none;
 	}
 	
-	.showcase-gallery.active .clapat-slide {
+	.showcase-gallery.active .aryanjacob.in-slide {
 		pointer-events:initial;
 	}
 	
@@ -640,11 +640,11 @@
 		margin-right:60px;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(odd) .slide-thumb {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(odd) .slide-thumb {
 		align-self: flex-end;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(even) .slide-thumb {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(even) .slide-thumb {
 		align-self: flex-start;
 	}
 	
@@ -679,11 +679,11 @@
 		align-self: center;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(odd) .slide-inner-height {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(odd) .slide-inner-height {
 		width: 44%;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(even) .slide-inner-height {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(even) .slide-inner-height {
 		width: 50%;
 	}	
 	
@@ -708,7 +708,7 @@
 	
 	/* Slide Trigger Item */
 	
-	.showcase-gallery .clapat-slide .trigger-item {
+	.showcase-gallery .aryanjacob.in-slide .trigger-item {
 		width: auto;
 		height: 100%;
 		display: block;
@@ -751,23 +751,23 @@
 		transition: all 0.15s ease-out 0s;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(odd) .slide-caption {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(odd) .slide-caption {
 		padding-left: 50%;	
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(even) .slide-caption {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(even) .slide-caption {
 		padding-left: 56%;	
 	}	
 	
-	.showcase-gallery .clapat-slide.hovered .slide-caption {
+	.showcase-gallery .aryanjacob.in-slide.hovered .slide-caption {
 		opacity: 1;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(odd) .slide-caption {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(odd) .slide-caption {
 		align-self: flex-start;
 	}
 	
-	.showcase-gallery .clapat-slide:nth-child(even) .slide-caption {
+	.showcase-gallery .aryanjacob.in-slide:nth-child(even) .slide-caption {
 		align-self: flex-end;
 	}
 	
@@ -804,7 +804,7 @@
 		color: #fff;
 	}
 	
-	.showcase-gallery .clapat-slide .slide-date {
+	.showcase-gallery .aryanjacob.in-slide .slide-date {
 		display: block;
 		color: #000;
 		position: relative;
@@ -961,7 +961,7 @@
 	Showcase Lists
 ---------------------------------------------------*/
 	
-	.showcase-gallery .clapat-sync-slider {
+	.showcase-gallery .aryanjacob.in-sync-slider {
 		position: fixed;
 		top: 0;
 		left:0;
@@ -976,11 +976,11 @@
   		-webkit-mask-image: linear-gradient(180deg, transparent 5%, #000 20%, #000 80%, transparent 95%);
 	}
 	
-	.showcase-gallery .clapat-sync-slider.active {
+	.showcase-gallery .aryanjacob.in-sync-slider.active {
 		pointer-events:initial;
 	}
 	
-	.showcase-gallery .clapat-sync-slider-wrapper {
+	.showcase-gallery .aryanjacob.in-sync-slider-wrapper {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -988,11 +988,11 @@
 		box-sizing:border-box;
 	}
 	
-	.showcase-gallery .clapat-sync-slider-viewport {
+	.showcase-gallery .aryanjacob.in-sync-slider-viewport {
 		margin:0 auto;
 	}
 	
-	.showcase-gallery .clapat-sync-slide {
+	.showcase-gallery .aryanjacob.in-sync-slide {
 		display: table;
 		width:auto;
 		margin:0 auto;
@@ -1002,35 +1002,35 @@
 		position: relative;
 	}
 	
-	.load-project-thumb-from-slider .clapat-sync-slide.disable {
+	.load-project-thumb-from-slider .aryanjacob.in-sync-slide.disable {
 		pointer-events:none;
 	}
 	
-	.clapat-state-dragging .showcase-gallery .clapat-sync-slide {
+	.aryanjacob.in-state-dragging .showcase-gallery .aryanjacob.in-sync-slide {
 		cursor:grabbing;
 		pointer-events:none;
 	}
 	
-	.showcase-gallery .clapat-sync-slide .trigger-item {
+	.showcase-gallery .aryanjacob.in-sync-slide .trigger-item {
 		display: flex;
 		height: 100%;
 		position: relative;
 		width: auto;
 	}
 	
-	.showcase-gallery .clapat-sync-slide .trigger-item.above {
+	.showcase-gallery .aryanjacob.in-sync-slide .trigger-item.above {
 		margin-bottom:20px;
 		line-height:calc(1rem + 4vw);
 		height:calc(1rem + 4vw);
 	}
 	
-	.showcase-gallery .clapat-sync-slide .hover-reveal::before {
+	.showcase-gallery .aryanjacob.in-sync-slide .hover-reveal::before {
 		float: left;
 		padding-top: 100%;
 		content: "";
 	}
 	
-	.showcase-gallery .clapat-sync-slide .hover-reveal {
+	.showcase-gallery .aryanjacob.in-sync-slide .hover-reveal {
 		position: fixed;
 		width: 12vw;
 		height: auto;		
@@ -1039,13 +1039,13 @@
 		align-items:center;
 	}
 	
-	.showcase-gallery .clapat-sync-slide .hover-reveal.landscape::before {
+	.showcase-gallery .aryanjacob.in-sync-slide .hover-reveal.landscape::before {
 		float: left;
 		padding-top: 71.43%;
 		content: "";
 	}
 	
-	.showcase-gallery .clapat-sync-slide .hover-reveal.landscape {
+	.showcase-gallery .aryanjacob.in-sync-slide .hover-reveal.landscape {
 		position: fixed;
 		width: 25vw;
 		height: auto;
@@ -1053,13 +1053,13 @@
 		overflow:hidden;
 	}
 		
-	.showcase-gallery .clapat-sync-slide .hover-reveal::after {
+	.showcase-gallery .aryanjacob.in-sync-slide .hover-reveal::after {
 		display: block;
 		content: "";
 		clear: both;
 	}
 	
-	.showcase-gallery .clapat-sync-slide .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide .slide-title {
 		display: block;
 		font-size: calc(1rem + 2vw);
 		line-height: inherit;
@@ -1079,29 +1079,29 @@
 		margin-bottom:20px;
 	}
 	
-	.showcase-gallery .clapat-sync-slide.active .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide.active .slide-title {
 		font-family: "Playfair Display", serif;
 		font-size: calc(1rem + 2.15vw);
 	}
 	
-	.light-content .showcase-gallery .clapat-sync-slide .slide-title {
+	.light-content .showcase-gallery .aryanjacob.in-sync-slide .slide-title {
 		color: #fff;
 	}
 	
-	.showcase-gallery .clapat-sync-slide.disable .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide.disable .slide-title {
 		opacity:0.1;
 	}
 	
-	.showcase-gallery .clapat-sync-slide:hover .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide:hover .slide-title {
 		opacity:1;
 		cursor:pointer;		
 	}
 	
-	.showcase-gallery .clapat-sync-slide.active .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide.active .slide-title {
 		opacity:1;	
 	}
 	
-	.showcase-gallery .clapat-sync-slide .slide-title span {
+	.showcase-gallery .aryanjacob.in-sync-slide .slide-title span {
 		display:inline-block;
 		opacity:0;
 	}	
@@ -1460,11 +1460,11 @@
 		display:none;
 	}
 	
-	.showcase-gallery .clapat-slider {
+	.showcase-gallery .aryanjacob.in-slider {
     	padding: 0 10vw 0 10vw;
 	}
 	
-	.showcase-gallery .clapat-slide {
+	.showcase-gallery .aryanjacob.in-slide {
     	width: 80vw;
 		padding: 0 2vw 0 2vw;
 	}
@@ -1561,11 +1561,11 @@
 		font-size: 18px;
 	}
 	
-	.showcase-gallery .clapat-slide .slide-date {
+	.showcase-gallery .aryanjacob.in-slide .slide-date {
     	font-size: 14px;
 	}
 	
-	.showcase-gallery .clapat-sync-slide .slide-title {
+	.showcase-gallery .aryanjacob.in-sync-slide .slide-title {
 		font-size: calc(1rem + 3vw);
 	}
 	

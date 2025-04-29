@@ -252,10 +252,10 @@ Function Scroll Effects
 				if (parentRow) {
 					bgColor = parentRow.getAttribute('data-bgcolor');
 				} else {
-					bgColor = document.getElementById('clapat-page-content').getAttribute('data-bgcolor');
+					bgColor = document.getElementById('aryanjacob.in-page-content').getAttribute('data-bgcolor');
 				}
 			} else {
-				bgColor = document.getElementById('clapat-page-content').getAttribute('data-bgcolor');
+				bgColor = document.getElementById('aryanjacob.in-page-content').getAttribute('data-bgcolor');
 			}
 			
 			pixelsWrappers.forEach(function(wrapper) {
@@ -335,7 +335,7 @@ Function Scroll Effects
 		
 			function setViewPortHeight() {
 				var winHeight = $(window).height();					
-				gsap.set(".smooth-scroll main, .has-parallax, .clapat-slider-wrapper:not(.content-slider), .showcase-lists .clapat-sync-slider, .slider-fixed-content", { height: winHeight});
+				gsap.set(".smooth-scroll main, .has-parallax, .aryanjacob.in-slider-wrapper:not(.content-slider), .showcase-lists .aryanjacob.in-sync-slider, .slider-fixed-content", { height: winHeight});
 			}
 	
 			setViewPortHeight();
@@ -402,54 +402,54 @@ Function Scroll Effects
 			// Create a scroll trigger
 			
 			ScrollTrigger.create({
-				trigger: '.clapat-header', // Set the trigger element
+				trigger: '.aryanjacob.in-header', // Set the trigger element
 				start: 'top 120px',
 				onEnter: function() {
 					//Restore the original image source			
 					imgLogoWhite.src = originalSrcWhite;
 					imgLogoBlack.src = originalSrcBlack;
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+					gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:1});
 				},
 				onEnterBack: function() {
 					// Restore the original image source
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:0, onComplete: function() {
+					gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:0, onComplete: function() {
 						imgLogoWhite.src = originalSrcWhite;
 						imgLogoBlack.src = originalSrcBlack;
-						gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+						gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:1});
 					}});
 					
-					$('.clapat-header').removeClass('swapped-logo');
+					$('.aryanjacob.in-header').removeClass('swapped-logo');
 				},
 				onLeave: function() {
 					// Change the image source
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:0, onComplete: function() {
+					gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:0, onComplete: function() {
 						imgLogoWhite.src = updatedSrcWhite;
 						imgLogoBlack.src = updatedSrcBlack;
-						gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+						gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:1});
 					}});
 					
-					$('.clapat-header').addClass('swapped-logo');			
+					$('.aryanjacob.in-header').addClass('swapped-logo');			
 				},
 				onLeaveBack: function() {
 					// Change the image source
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:0, onComplete: function() {
+					gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:0, onComplete: function() {
 						imgLogoWhite.src = updatedSrcWhite;
 						imgLogoBlack.src = updatedSrcBlack;
-						gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+						gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:1});
 					}});
 					
-					$('.clapat-header').addClass('swapped-logo');
+					$('.aryanjacob.in-header').addClass('swapped-logo');
 				}
 			});
 			
 			$('a.ajax-link, a.slide-link, a.next-ajax-link-page').on('click', function() {
 				// Restore the original image source when you leave the page
-				if ($(".clapat-header").hasClass("swapped-logo")) {
+				if ($(".aryanjacob.in-header").hasClass("swapped-logo")) {
 				
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:0, onComplete: function() {
+					gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:0, onComplete: function() {
 						imgLogoWhite.src = originalSrcWhite;
 						imgLogoBlack.src = originalSrcBlack;
-						gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+						gsap.to($("#aryanjacob.in-logo"), {duration: 0.2, opacity:1});
 					}});
 				
 				}
@@ -1098,9 +1098,9 @@ Function Scroll Effects
 			function setClippedImageWrapperProperties() {
 				gsap.set(clippedImageContent, { paddingTop:""});											
 				gsap.set(clippedImageGradient, { height: window.innerHeight * 0.3});
-				gsap.set(clippedImage, { height: window.innerHeight - document.querySelector('.clapat-header').offsetHeight * 2 });								
+				gsap.set(clippedImage, { height: window.innerHeight - document.querySelector('.aryanjacob.in-header').offsetHeight * 2 });								
 				gsap.set(clippedImageContent, { paddingTop: (window.innerHeight/2) + clippedImageContent.offsetHeight});
-				gsap.set(clippedImageWrapper, { height: window.innerHeight + clippedImageContent.offsetHeight - document.querySelector('.clapat-header').offsetHeight});
+				gsap.set(clippedImageWrapper, { height: window.innerHeight + clippedImageContent.offsetHeight - document.querySelector('.aryanjacob.in-header').offsetHeight});
 				
 			}		
 			
@@ -2372,7 +2372,7 @@ Function Scroll Effects
 		
 		function setMainPageContentMargins() {
 			var winHeight = $(window).height();
-			var footerHeight = $('.clapat-footer').height();
+			var footerHeight = $('.aryanjacob.in-footer').height();
 			var heroTranslate = gsap.getProperty("#next-project-caption", "height");
 			
 			gsap.set("#project-nav .next-project-image-wrapper", { height: winHeight, y:heroTranslate});
@@ -2504,7 +2504,7 @@ Function Scroll Effects
 			scrollTrigger: {
 				trigger: '#page-nav',
 				start: startValue,
-				end: () => `+=${$('#page-nav').outerHeight() + $('.clapat-footer').outerHeight()}`,
+				end: () => `+=${$('#page-nav').outerHeight() + $('.aryanjacob.in-footer').outerHeight()}`,
 				scrub: true,
 			}			
 		});
@@ -2733,7 +2733,7 @@ Function Scroll Effects
 				setTimeout(function() {
 					var changeHeaderColor = gsap.utils.toArray('.change-header-color');	
 					changeHeaderColor.forEach(function(changeHeaderElement) {						
-						var pageHeader = document.querySelector('.clapat-header');							
+						var pageHeader = document.querySelector('.aryanjacob.in-header');							
 						gsap.to(changeHeaderElement, {
 							scrollTrigger: {
 								trigger: changeHeaderElement,
@@ -2769,13 +2769,13 @@ Function Scroll Effects
 		}	
 		
 		
-		if ($('#clapat-page-content').hasClass("light-content")) {
+		if ($('#aryanjacob.in-page-content').hasClass("light-content")) {
 			if ($('#project-nav').hasClass("change-header")) {
 		  		imagesLoaded('body', function() {
 					setTimeout(function() {	
 						var pageNav = document.querySelector('#project-nav.change-header');
 						if (pageNav) {
-							var pageContent = document.querySelector('#clapat-page-content');	
+							var pageContent = document.querySelector('#aryanjacob.in-page-content');	
 							var nextPageCaptionParallax = gsap.to('.page-nav-caption', {
 								scrollTrigger: {
 									trigger: pageNav,
@@ -2801,13 +2801,13 @@ Function Scroll Effects
 			}
 		}
 		
-		if ($('#clapat-page-content').hasClass("dark-content")) {
+		if ($('#aryanjacob.in-page-content').hasClass("dark-content")) {
 			if ($('#project-nav').hasClass("change-header")) {
 		  		imagesLoaded('body', function() {
 					setTimeout(function() {	
 						var pageNav = document.querySelector('#project-nav.change-header');
 						if (pageNav) {
-							var pageContent = document.querySelector('#clapat-page-content');
+							var pageContent = document.querySelector('#aryanjacob.in-page-content');
 							var nextPageCaptionParallax = gsap.to('.page-nav-caption', {
 								scrollTrigger: {
 									trigger: pageNav,
@@ -2838,9 +2838,9 @@ Function Scroll Effects
 		
 		gsap.set('.header-gradient', {
 			delay: 0.5,
-			backgroundColor: document.getElementById('clapat-page-content').getAttribute('data-bgcolor'),			
+			backgroundColor: document.getElementById('aryanjacob.in-page-content').getAttribute('data-bgcolor'),			
 			onUpdate: function() {
-			var bgColor = document.getElementById('clapat-page-content').getAttribute('data-bgcolor');
+			var bgColor = document.getElementById('aryanjacob.in-page-content').getAttribute('data-bgcolor');
 				document.querySelector('.header-gradient').style.maskImage = `linear-gradient(${bgColor}, transparent)`;
 				document.querySelector('.header-gradient').style.webkitMaskImage = `linear-gradient(${bgColor}, transparent)`;
 			}
@@ -2850,7 +2850,7 @@ Function Scroll Effects
 		var disableHeaderGradient = gsap.utils.toArray('#hero-image-wrapper, .disable-header-gradient');
 		
 		disableHeaderGradient.forEach(function(noHeaderGradient) {						
-			var pageHeader = document.querySelector('.clapat-header');
+			var pageHeader = document.querySelector('.aryanjacob.in-header');
 			gsap.to(noHeaderGradient, {
 				scrollTrigger: {
 					trigger: noHeaderGradient,
@@ -2874,7 +2874,7 @@ Function Scroll Effects
 		
 		$('a.ajax-link').on('click', function() {
 			//gsap.to('.header-gradient', { duration: 0.3, delay:0, opacity: 0, ease: Linear.easeNone, });
-			gsap.to('#clapat-logo img.white-logo, #clapat-logo img.black-logo', { duration: 0.5, delay:0, opacity: "",  ease: Linear.easeNone, });
+			gsap.to('#aryanjacob.in-logo img.white-logo, #aryanjacob.in-logo img.black-logo', { duration: 0.5, delay:0, opacity: "",  ease: Linear.easeNone, });
 			gsap.to('.classic-menu .flexnav li', { duration: 0.5, delay:0, color: "", ease: Linear.easeNone, });			
 			gsap.to('.button-wrap.menu', { duration: 0.5, delay:0, color: "", boxShadow: "", ease: Linear.easeNone, });
 			gsap.to('.button-icon-link', { duration: 0.5, delay:0, color: "", boxShadow: "", ease: Linear.easeNone, });
@@ -2926,57 +2926,57 @@ Function First Load
 		}
 		
 		
-		if ($("#clapat-page-content").hasClass("light-content")) {
-			$(".clapat-nav-wrapper").css('background-color', function () {
-				return $(".clapat-header").data('menucolor')
+		if ($("#aryanjacob.in-page-content").hasClass("light-content")) {
+			$(".aryanjacob.in-nav-wrapper").css('background-color', function () {
+				return $(".aryanjacob.in-header").data('menucolor')
 			});
 			
-			gsap.to("main", {duration: 0.5, backgroundColor: document.querySelector("#clapat-page-content").getAttribute("data-bgcolor"), ease:Power2.easeInOut});
+			gsap.to("main", {duration: 0.5, backgroundColor: document.querySelector("#aryanjacob.in-page-content").getAttribute("data-bgcolor"), ease:Power2.easeInOut});
 			
 			$('#magic-cursor').addClass('light-content');
 			if( $('#hero').length > 0 ){						
 				if( $('#hero').hasClass("has-image")) {	
-					$(".clapat-header").css('background-color', 'transparent');
+					$(".aryanjacob.in-header").css('background-color', 'transparent');
 				} else {
-					if ($(".clapat-header").hasClass("fullscreen-menu")) {
-						$(".clapat-header").css('background-color', 'transparent');
+					if ($(".aryanjacob.in-header").hasClass("fullscreen-menu")) {
+						$(".aryanjacob.in-header").css('background-color', 'transparent');
 					} else {
 						if( $('#blog').length > 0 ){
-							$(".clapat-header").css('background-color', '#171717');
+							$(".aryanjacob.in-header").css('background-color', '#171717');
 						}
 						if( $('#post').length > 0 ){
-							$(".clapat-header").css('background-color', '#171717');
+							$(".aryanjacob.in-header").css('background-color', '#171717');
 						}
 					}
 				}
 			} else {
-				$(".clapat-header").css('background-color', 'transparent');
+				$(".aryanjacob.in-header").css('background-color', 'transparent');
 			}
 		} else {			
-			$(".clapat-nav-wrapper").css('background-color', function () {
-				return $(".clapat-header").data('menucolor')
+			$(".aryanjacob.in-nav-wrapper").css('background-color', function () {
+				return $(".aryanjacob.in-header").data('menucolor')
 			});	
 			
-			gsap.to("main", {duration: 0.5, backgroundColor: document.querySelector("#clapat-page-content").getAttribute("data-bgcolor"), ease:Power2.easeInOut});
+			gsap.to("main", {duration: 0.5, backgroundColor: document.querySelector("#aryanjacob.in-page-content").getAttribute("data-bgcolor"), ease:Power2.easeInOut});
 			
 			$('#magic-cursor').removeClass('light-content');
 			if( $('#hero').length > 0 ){	
 				if( $('#hero').hasClass("has-image")) {	
-					$(".clapat-header").css('background-color', 'transparent');
+					$(".aryanjacob.in-header").css('background-color', 'transparent');
 				} else {
-					if ($(".clapat-header").hasClass("fullscreen-menu")) {
-						$(".clapat-header").css('background-color', 'transparent');
+					if ($(".aryanjacob.in-header").hasClass("fullscreen-menu")) {
+						$(".aryanjacob.in-header").css('background-color', 'transparent');
 					} else {
 						if( $('#blog').length > 0 ){
-							$(".clapat-header").css('background-color', '#fff');
+							$(".aryanjacob.in-header").css('background-color', '#fff');
 						}
 						if( $('#post').length > 0 ){
-							$(".clapat-header").css('background-color', '#fff');
+							$(".aryanjacob.in-header").css('background-color', '#fff');
 						}
 					}
 				}
 			} else {
-				$(".clapat-header").css('background-color', 'transparent');
+				$(".aryanjacob.in-header").css('background-color', 'transparent');
 			}
 		}	
 		
@@ -2994,7 +2994,7 @@ Function First Load
 			$(".flexnav").removeClass("flexnav-show");
 			$('#menu-burger').removeClass("open");
 			
-			gsap.to("nav", {duration: 0.3, backgroundColor: document.querySelector("#clapat-page-content").getAttribute("data-bgcolor")});
+			gsap.to("nav", {duration: 0.3, backgroundColor: document.querySelector("#aryanjacob.in-page-content").getAttribute("data-bgcolor")});
 			
 			$('header').removeClass('white-header');
 			$("#app").remove();
@@ -3017,32 +3017,32 @@ Function First Load
 		
 		//Load Page From Menu
 
-		$('.clapat-nav-wrapper .ajax-link').on('click', function() {
+		$('.aryanjacob.in-nav-wrapper .ajax-link').on('click', function() {
 			$(this).parents('.menu-timeline').addClass('hover');
 			$(this).parents('.item-with-ul').addClass('hover');
 			gsap.set($(this).find('span'),{yPercent:0});	
-			$('.clapat-header').removeClass('white-header');
+			$('.aryanjacob.in-header').removeClass('white-header');
 			$("#app").remove();				
 		});
 
 		
 		$('#burger-wrapper, .menu .button-text').on('click', function() {
-			$('#menu-burger, .clapat-nav-wrapper').toggleClass('open');			
+			$('#menu-burger, .aryanjacob.in-nav-wrapper').toggleClass('open');			
 			setTimeout( function(){			
 				if ($('#menu-burger').hasClass("open")) {
 					
-					gsap.to('.clapat-nav-wrapper', {duration: 0.3, opacity:1, ease:Power2.easeInOut});
+					gsap.to('.aryanjacob.in-nav-wrapper', {duration: 0.3, opacity:1, ease:Power2.easeInOut});
 					
-					$('.clapat-header').addClass('over-sidebar').addClass('over-white-section');
+					$('.aryanjacob.in-header').addClass('over-sidebar').addClass('over-white-section');
 					if (!$('#page-content').hasClass("light-content")) {	
 						$('#magic-cursor').addClass('light-content');
 					}
-					if ($('.clapat-header').hasClass("invert-header")) {
+					if ($('.aryanjacob.in-header').hasClass("invert-header")) {
 						$('#header-container').addClass('light-content-header');
 					} else {
 						$('#header-container').addClass('dark-content-header');
 					}
-					gsap.set($(".clapat-nav-wrapper ul ul li"), {y: 0, opacity:1});
+					gsap.set($(".aryanjacob.in-nav-wrapper ul ul li"), {y: 0, opacity:1});
 					//Fade In Navigation Lists
 					gsap.set($(".menu-timeline .before-span"), {y: 160, opacity:0});
 					gsap.to($(".menu-timeline .before-span"), {duration: 0.7, y:0, opacity:1, delay:0.4, stagger:0.1, ease:Power2.easeOut});
@@ -3061,18 +3061,18 @@ Function First Load
 						
 				} else {
 					
-					gsap.to('.clapat-nav-wrapper', {duration: 0.3, opacity:0, delay:0.6, ease:Power2.easeInOut});
+					gsap.to('.aryanjacob.in-nav-wrapper', {duration: 0.3, opacity:0, delay:0.6, ease:Power2.easeInOut});
 						
 					//Fade Out Navigation Lists						
 					gsap.to($(".menu-timeline .before-span"), {duration: 0.5, y:-200, opacity:1, delay:0, stagger:0.05, ease:Power2.easeIn});
-					gsap.to($(".clapat-nav-wrapper ul ul li"), {duration: 0.5, y:-120, opacity:0, delay:0, stagger:0.03, ease:Power2.easeIn});
+					gsap.to($(".aryanjacob.in-nav-wrapper ul ul li"), {duration: 0.5, y:-120, opacity:0, delay:0, stagger:0.03, ease:Power2.easeIn});
 					
 					if (!$('#page-content').hasClass("light-content")) {	
 						setTimeout( function(){
 							$('#magic-cursor').removeClass('light-content');							
 						} , 500 );
 					}
-					if ($('.clapat-header').hasClass("invert-header")) {
+					if ($('.aryanjacob.in-header').hasClass("invert-header")) {
 						setTimeout( function(){
 							$('#header-container').removeClass('light-content-header');
 						} , 500 );
@@ -3083,9 +3083,9 @@ Function First Load
 					}
 					setTimeout( function(){
 						$(".touch-button.active").trigger("click");
-						$('.clapat-header').removeClass('over-sidebar')
+						$('.aryanjacob.in-header').removeClass('over-sidebar')
 						setTimeout( function(){
-							$('.clapat-header').removeClass('over-white-section');
+							$('.aryanjacob.in-header').removeClass('over-white-section');
 						} , 350 );
 					} , 500 );
 				}							
@@ -3512,18 +3512,18 @@ Function FitThumbScreen WEBGL
 							
 							
 							
-							/*if (!$('#clapat-page-content').hasClass("light-content")) {
+							/*if (!$('#aryanjacob.in-page-content').hasClass("light-content")) {
 								
 								if (!$('.portfolio').hasClass("portfolio-shortcode")) {
 									if (!parent_item.hasClass("change-header")) {
-										$('#clapat-page-content').delay(700).queue(function(next){							
+										$('#aryanjacob.in-page-content').delay(700).queue(function(next){							
 											$(this).addClass('light-content');
 											next();
 										});
 									}								
 								} else {								
 									if (!parent_item.hasClass("change-header")) {
-										$('#clapat-page-content').delay(700).queue(function(next){							
+										$('#aryanjacob.in-page-content').delay(700).queue(function(next){							
 											$(this).removeClass('light-content');
 											next();
 										});
@@ -3532,14 +3532,14 @@ Function FitThumbScreen WEBGL
 							} else {							
 								if (!$('.portfolio').hasClass("portfolio-shortcode")) {
 									if (parent_item.hasClass("change-header")) {
-										$('#clapat-page-content').delay(700).queue(function(next){							
+										$('#aryanjacob.in-page-content').delay(700).queue(function(next){							
 											$(this).removeClass('light-content');
 											next();
 										});
 									}
 								} else {
 									if (!parent_item.hasClass("change-header")) {
-										$('#clapat-page-content').delay(700).queue(function(next){							
+										$('#aryanjacob.in-page-content').delay(700).queue(function(next){							
 											$(this).removeClass('light-content');
 											next();
 										});
@@ -3550,7 +3550,7 @@ Function FitThumbScreen WEBGL
 									
 								
 											
-							$('.clapat-slider-wrapper .trigger-item').each(function(){
+							$('.aryanjacob.in-slider-wrapper .trigger-item').each(function(){
 								if (!$(this).hasClass("above")) {
 									gsap.to($(this), {duration: 0.4, delay:0, opacity:0, ease:Power4.easeInOut});
 								} else  {
@@ -3558,7 +3558,7 @@ Function FitThumbScreen WEBGL
 								}
 							});
 							
-							gsap.to('#hero, #show-filters, .item-caption-wrapper, .showcase-portfolio .slide-caption, #page-nav, .clapat-footer, .fadeout-element', {duration: 0.5, opacity:0, ease:Power4.easeInOut});
+							gsap.to('#hero, #show-filters, .item-caption-wrapper, .showcase-portfolio .slide-caption, #page-nav, .aryanjacob.in-footer, .fadeout-element', {duration: 0.5, opacity:0, ease:Power4.easeInOut});
 							gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', opacity:1});
 							gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
 							$("#ball").removeClass("with-icon");
@@ -3918,7 +3918,7 @@ Function Sliders
 			
 		if( $('.content-slider').length > 0 ){
 				
-			slider = new ClapatSlider('.content-slider', { 
+			slider = new aryanjacob.inSlider('.content-slider', { 
 				direction: 'horizontal', 
 				snap: true,
 				mousewheel: false,
@@ -3929,16 +3929,16 @@ Function Sliders
 			});
 			
 			$(".slider-button-prev").mouseenter(function(e) {				
-				var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+				var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 				if (modifyMouseColor) {
 					$("#ball").addClass("color-cursor");
 					gsap.set('#ball.color-cursor', {color:modifyMouseColor });					
 					gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:modifyMouseColor });
 				} else {
-					if ($(this).parents(".clapat-slider-wrapper").hasClass("light-cursor")) {
+					if ($(this).parents(".aryanjacob.in-slider-wrapper").hasClass("light-cursor")) {
 						$("body").addClass("drag-cursor-white");
 						gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#fff', backgroundColor:'#fff'});
-					} else if ($(this).parents(".clapat-slider-wrapper").hasClass("dark-cursor")) {
+					} else if ($(this).parents(".aryanjacob.in-slider-wrapper").hasClass("dark-cursor")) {
 						$("body").addClass("drag-cursor-black");
 						gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#000', backgroundColor:'#000'});
 					}
@@ -3954,16 +3954,16 @@ Function Sliders
 			});
 			
 			$(".slider-button-next").mouseenter(function(e) {	
-				var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+				var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 				if (modifyMouseColor) {
 					$("#ball").addClass("color-cursor");
 					gsap.set('#ball.color-cursor', {color:modifyMouseColor });
 					gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:modifyMouseColor });
 				} else {
-					if ($(this).parents(".clapat-slider-wrapper").hasClass("light-cursor")) {
+					if ($(this).parents(".aryanjacob.in-slider-wrapper").hasClass("light-cursor")) {
 						$("body").addClass("drag-cursor-white");
 						gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#fff', backgroundColor:'#fff'});
-					} else if ($(this).parents(".clapat-slider-wrapper").hasClass("dark-cursor")) {
+					} else if ($(this).parents(".aryanjacob.in-slider-wrapper").hasClass("dark-cursor")) {
 						$("body").addClass("drag-cursor-black");
 						gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#000', backgroundColor:'#000'});
 					}
@@ -3978,9 +3978,9 @@ Function Sliders
 				$("body").removeClass("drag-cursor-black").removeClass("drag-cursor-white");
 			});
 			
-			$('.content-slider.looped-carousel .clapat-slider, .content-slider.small-looped-carousel .clapat-slider').on('mouseenter mousemove', function() {	
+			$('.content-slider.looped-carousel .aryanjacob.in-slider, .content-slider.small-looped-carousel .aryanjacob.in-slider').on('mouseenter mousemove', function() {	
 				$("body" ).addClass("scale-drag-x");
-				var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+				var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 				if (modifyMouseColor) {
 					$("#ball").addClass("color-cursor");
 					gsap.set('#ball.color-cursor', {color:modifyMouseColor });
@@ -4056,23 +4056,23 @@ Function Lightbox
 			
 			event.preventDefault();
 			
-			$('body').prepend(`<div class="clapat-img-popup">
-				<div class="clapat-img-popup-bg-close"></div>				
-				<div class="clapat-img-popup-viewport">
-					<div class="clapat-img-popup-preloader"><div></div><div></div><div></div><div></div></div>					
+			$('body').prepend(`<div class="aryanjacob.in-img-popup">
+				<div class="aryanjacob.in-img-popup-bg-close"></div>				
+				<div class="aryanjacob.in-img-popup-viewport">
+					<div class="aryanjacob.in-img-popup-preloader"><div></div><div></div><div></div><div></div></div>					
 					<img />
-					<div class="clapat-img-popup-close link"></div>						
+					<div class="aryanjacob.in-img-popup-close link"></div>						
 				</div>				
-				<div class="clapat-img-popup-prev link"></div>
-				<div class="clapat-img-popup-next link"></div></div>`);
+				<div class="aryanjacob.in-img-popup-prev link"></div>
+				<div class="aryanjacob.in-img-popup-next link"></div></div>`);
 			
-			const details = document.querySelector('.clapat-img-popup');
-			const detailsBgClose = document.querySelector('.clapat-img-popup-bg-close');
-			const detailsClose = document.querySelector('.clapat-img-popup-close');
-			const detailsPreloader = document.querySelector('.clapat-img-popup-preloader');
-			const detailImage = document.querySelector('.clapat-img-popup img');
-			const detailPrev = document.querySelector('.clapat-img-popup-prev');
-			const detailNext = document.querySelector('.clapat-img-popup-next');
+			const details = document.querySelector('.aryanjacob.in-img-popup');
+			const detailsBgClose = document.querySelector('.aryanjacob.in-img-popup-bg-close');
+			const detailsClose = document.querySelector('.aryanjacob.in-img-popup-close');
+			const detailsPreloader = document.querySelector('.aryanjacob.in-img-popup-preloader');
+			const detailImage = document.querySelector('.aryanjacob.in-img-popup img');
+			const detailPrev = document.querySelector('.aryanjacob.in-img-popup-prev');
+			const detailNext = document.querySelector('.aryanjacob.in-img-popup-next');
 			
 			gsap.to(detailsBgClose, {duration: 0.3, delay:0, backgroundColor:"rgba(0,0,0,0.9)"});
 			gsap.to(detailsPreloader, {duration: 0.2, opacity:1});
@@ -4126,12 +4126,12 @@ Function Lightbox
 
 		function hideDetails() {
 			
-			const details = document.querySelector('.clapat-img-popup');
-			const detailsBgClose = document.querySelector('.clapat-img-popup-bg-close');
-			const detailsClose = document.querySelector('.clapat-img-popup-close');
-			const detailImage = document.querySelector('.clapat-img-popup img');
-			const detailPrev = document.querySelector('.clapat-img-popup-prev');
-			const detailNext = document.querySelector('.clapat-img-popup-next');
+			const details = document.querySelector('.aryanjacob.in-img-popup');
+			const detailsBgClose = document.querySelector('.aryanjacob.in-img-popup-bg-close');
+			const detailsClose = document.querySelector('.aryanjacob.in-img-popup-close');
+			const detailImage = document.querySelector('.aryanjacob.in-img-popup img');
+			const detailPrev = document.querySelector('.aryanjacob.in-img-popup-prev');
+			const detailNext = document.querySelector('.aryanjacob.in-img-popup-next');
 			
 			detailsBgClose.removeEventListener('click', hideDetails);
 			detailsClose.removeEventListener('click', hideDetails);
@@ -4153,7 +4153,7 @@ Function Lightbox
 				duration: 0.5,
 				delay: 0.0, // time in ms if we want a delay before flip
 				onComplete: () => gsap.to(detailsBgClose, {duration: 0.5, backgroundColor:"rgba(0,0,0,0)", onComplete: function() {
-					$('.clapat-img-popup').remove();
+					$('.aryanjacob.in-img-popup').remove();
 				}}),				
 			});
 
@@ -4162,8 +4162,8 @@ Function Lightbox
 		
 		function nextPopup() {
 			
-			const detailsPreloader = document.querySelector('.clapat-img-popup-preloader');
-			const detailImage = document.querySelector('.clapat-img-popup img');
+			const detailsPreloader = document.querySelector('.aryanjacob.in-img-popup-preloader');
+			const detailImage = document.querySelector('.aryanjacob.in-img-popup img');
 			let currIndex = items.indexOf(activeItem);
 			
 			let nextIndex = currIndex + 1;
@@ -4185,8 +4185,8 @@ Function Lightbox
 		
 		function prevPopup() {
 			
-			const detailsPreloader = document.querySelector('.clapat-img-popup-preloader');
-			const detailImage = document.querySelector('.clapat-img-popup img');
+			const detailsPreloader = document.querySelector('.aryanjacob.in-img-popup-preloader');
+			const detailImage = document.querySelector('.aryanjacob.in-img-popup img');
 			let currIndex = items.indexOf(activeItem);
 			
 			let prevIndex = currIndex - 1;
@@ -4209,7 +4209,7 @@ Function Lightbox
 		gsap.utils.toArray('.image-link').forEach(item => item.addEventListener('click', () => showDetails(item)));
 		
 		$(".image-link").mouseenter(function(e) {	
-			var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+			var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 			if (modifyMouseColor) {
 				$("#ball").addClass("color-cursor");
 				gsap.set('#ball.color-cursor', {color:modifyMouseColor });
@@ -4243,21 +4243,21 @@ Function Lightbox
 				return;
 			}
 			
-			$('body').prepend(`<div class="clapat-video-popup">
-				<div class="clapat-video-popup-bg-close"></div>				
-				<div class="clapat-video-popup-viewport">
-					<div class="clapat-video-popup-preloader"><div></div><div></div><div></div><div></div></div>					
-					<iframe class="clapat-video-popup-iframe" frameborder="0" allow="autoplay"></iframe>
-					<div class="clapat-video-popup-close link"></div>						
+			$('body').prepend(`<div class="aryanjacob.in-video-popup">
+				<div class="aryanjacob.in-video-popup-bg-close"></div>				
+				<div class="aryanjacob.in-video-popup-viewport">
+					<div class="aryanjacob.in-video-popup-preloader"><div></div><div></div><div></div><div></div></div>					
+					<iframe class="aryanjacob.in-video-popup-iframe" frameborder="0" allow="autoplay"></iframe>
+					<div class="aryanjacob.in-video-popup-close link"></div>						
 				</div>				
-				<div class="clapat-img-video-prev link"></div>
-				<div class="clapat-img-video-next link"></div></div>`);
+				<div class="aryanjacob.in-img-video-prev link"></div>
+				<div class="aryanjacob.in-img-video-next link"></div></div>`);
 			
-			const details = document.querySelector('.clapat-video-popup');
-			const detailsBgClose = document.querySelector('.clapat-video-popup-bg-close');
-			const detailsClose = document.querySelector('.clapat-video-popup-close');
-			const detailsPreloader = document.querySelector('.clapat-video-popup-preloader');
-			const detailIframe = document.querySelector('.clapat-video-popup iframe');
+			const details = document.querySelector('.aryanjacob.in-video-popup');
+			const detailsBgClose = document.querySelector('.aryanjacob.in-video-popup-bg-close');
+			const detailsClose = document.querySelector('.aryanjacob.in-video-popup-close');
+			const detailsPreloader = document.querySelector('.aryanjacob.in-video-popup-preloader');
+			const detailIframe = document.querySelector('.aryanjacob.in-video-popup iframe');
 			
 			gsap.to(detailsBgClose, {duration: 0.3, delay:0, backgroundColor:"rgba(0,0,0,0.9)"});
 			gsap.to(detailsPreloader, {duration: 0.2, opacity:1});
@@ -4322,10 +4322,10 @@ Function Lightbox
 
 		function hideVideoDetails() {
 			
-			const details = document.querySelector('.clapat-video-popup');
-			const detailsBgClose = document.querySelector('.clapat-video-popup-bg-close');
-			const detailsClose = document.querySelector('.clapat-video-popup-close');
-			const detailIframe = document.querySelector('.clapat-video-popup iframe');
+			const details = document.querySelector('.aryanjacob.in-video-popup');
+			const detailsBgClose = document.querySelector('.aryanjacob.in-video-popup-bg-close');
+			const detailsClose = document.querySelector('.aryanjacob.in-video-popup-close');
+			const detailIframe = document.querySelector('.aryanjacob.in-video-popup iframe');
 			
 			detailsBgClose.removeEventListener('click', hideDetails);
 			detailsClose.removeEventListener('click', hideDetails);
@@ -4333,7 +4333,7 @@ Function Lightbox
 			gsap.to([detailsClose, detailIframe], {duration: 0.2, delay:0, opacity:0});
 						
 			gsap.to(detailsBgClose, {duration: 0.5, delay:0.2, backgroundColor:"rgba(0,0,0,0)", onComplete: function() {
-					$('.clapat-video-popup').remove();
+					$('.aryanjacob.in-video-popup').remove();
 				}}),
 
 			sourceVideoItem = null;
@@ -4343,7 +4343,7 @@ Function Lightbox
 		gsap.utils.toArray('.video-link').forEach(item => item.addEventListener('click', (e) => showVideoDetails(e, item)));
 		
 		$(".video-link").mouseenter(function(e) {	
-			var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+			var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 			if (modifyMouseColor) {
 				$("#ball").addClass("color-cursor");
 				gsap.set('#ball.color-cursor', {color:modifyMouseColor });
@@ -4376,7 +4376,7 @@ Function Page PlayVideo
 			
 			
 			$(".video-wrapper").mouseenter(function(e) {
-				var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+				var modifyMouseColor = $('#aryanjacob.in-page-content').attr("data-modify-color");
 				if (modifyMouseColor) {
 					$("#ball").addClass("color-cursor");
 					gsap.set('#ball.color-cursor', {color:modifyMouseColor });
@@ -4745,7 +4745,7 @@ Function Core
 				gsap.ticker.remove(updatePosition);
 			})
 			
-			$(".clapat-button .sticky.left").mouseenter(function(e) {		  
+			$(".aryanjacob.in-button .sticky.left").mouseenter(function(e) {		  
 				var rcBounds = $(this)[0].getBoundingClientRect();		  
 				var positionX = rcBounds.left  + 22;
 				var positionY = rcBounds.top + rcBounds.height/2;		  
@@ -4753,7 +4753,7 @@ Function Core
 				gsap.ticker.remove(updatePosition);
 			})
 			
-			$(".clapat-button .sticky.right").mouseenter(function(e) {		  
+			$(".aryanjacob.in-button .sticky.right").mouseenter(function(e) {		  
 				var rcBounds = $(this)[0].getBoundingClientRect();		  
 				var positionX = rcBounds.right  - 22;
 				var positionY = rcBounds.top + rcBounds.height/2;		  
@@ -4788,7 +4788,7 @@ Function Core
 				gsap.to(ball, { duration: 0.3, scale: 0.7, borderWidth: '6px', opacity:0.6, borderColor:'#999' });
 			});
 			
-			$(".clapat-button .parallax-wrap.icon-wrap").mouseenter(function(e) {
+			$(".aryanjacob.in-button .parallax-wrap.icon-wrap").mouseenter(function(e) {
 				gsap.to(ball, { duration: 0.05, scale: 0.4, borderWidth: '0px', opacity:1, borderColor:'#000' });
 			});
 			
@@ -4824,16 +4824,16 @@ Function Core
 				gsap.to(ball, { duration: 0.5, borderColor:'#999', scale: 0.7, borderWidth: "6px"  });
 			});
 			
-			$(".clapat-button .sticky").mouseenter(function(e) {
-				if ($('#clapat-page-content').hasClass("light-content")) {
+			$(".aryanjacob.in-button .sticky").mouseenter(function(e) {
+				if ($('#aryanjacob.in-page-content').hasClass("light-content")) {
 					gsap.to(ball, { duration: 0.5, borderColor:'#000' });
 				} else {
 					gsap.to(ball, { duration: 0.5, borderColor:'#fff' });  
 				}
 			});
 			
-			$(".clapat-button .parallax-wrap").mouseenter(function(e) {
-				if ($('#clapat-page-content').hasClass("light-content")) {
+			$(".aryanjacob.in-button .parallax-wrap").mouseenter(function(e) {
+				if ($('#aryanjacob.in-page-content').hasClass("light-content")) {
 					gsap.to(ball, { duration: 0.05, borderColor:'#000'  });
 				} else {
 					gsap.to(ball, { duration: 0.05, borderColor:'#fff'  });
@@ -4919,11 +4919,11 @@ Function Core
 			});
 			
 			//Blog Hover Effects			
-			$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .clapat-sidebar-widget a").mouseenter(function(e) {	
+			$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .aryanjacob.in-sidebar-widget a").mouseenter(function(e) {	
 				gsap.to('#ball', {duration: 0.2, borderWidth: '1px', scale: 1, opacity:0});
 			});	
 					
-			$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .clapat-sidebar-widget a").mouseleave(function(e) {
+			$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .aryanjacob.in-sidebar-widget a").mouseleave(function(e) {
 				gsap.to('#ball', {duration: 0.3, borderWidth: '4px', scale:0.5, opacity:1});
 			});
 		}
@@ -4989,8 +4989,8 @@ Function Core
 				  
 				  	$('main').html(section);
 				  
-				 	var clapat_title = event.match(/<title[^>]*>([^<]+)<\/title>/)[1];
-					$('head title').html( clapat_title );
+				 	var aryanjacob.in_title = event.match(/<title[^>]*>([^<]+)<\/title>/)[1];
+					$('head title').html( aryanjacob.in_title );
 				  
 					// if we have Elementor inline styles in the target page
 					headTags = [
@@ -5066,7 +5066,7 @@ Function Core
 						gsap.ticker.remove(updatePosition);
 					})
 					
-					$(".clapat-button .sticky.left").mouseenter(function(e) {		  
+					$(".aryanjacob.in-button .sticky.left").mouseenter(function(e) {		  
 						var rcBounds = $(this)[0].getBoundingClientRect();		  
 						var positionX = rcBounds.left  + 22;
 						var positionY = rcBounds.top + rcBounds.height/2;		  
@@ -5074,7 +5074,7 @@ Function Core
 						gsap.ticker.remove(updatePosition);
 					})
 					
-					$(".clapat-button .sticky.right").mouseenter(function(e) {		  
+					$(".aryanjacob.in-button .sticky.right").mouseenter(function(e) {		  
 						var rcBounds = $(this)[0].getBoundingClientRect();		  
 						var positionX = rcBounds.right  - 22;
 						var positionY = rcBounds.top + rcBounds.height/2;		  
@@ -5109,7 +5109,7 @@ Function Core
 						gsap.to(ball, { duration: 0.3, scale: 0.7, borderWidth: '6px', opacity:0.6, borderColor:'#999' });
 					});
 					
-					$(".clapat-button .parallax-wrap.icon-wrap").mouseenter(function(e) {
+					$(".aryanjacob.in-button .parallax-wrap.icon-wrap").mouseenter(function(e) {
 						gsap.to(ball, { duration: 0.05, scale: 0.4, borderWidth: '0px', opacity:1, borderColor:'#000' });
 					});
 					
@@ -5145,16 +5145,16 @@ Function Core
 						gsap.to(ball, { duration: 0.5, borderColor:'#999', scale: 0.7, borderWidth: "6px"  });
 					});
 					
-					$(".clapat-button .sticky").mouseenter(function(e) {
-						if ($('#clapat-page-content').hasClass("light-content")) {
+					$(".aryanjacob.in-button .sticky").mouseenter(function(e) {
+						if ($('#aryanjacob.in-page-content').hasClass("light-content")) {
 							gsap.to(ball, { duration: 0.5, borderColor:'#000' });
 						} else {
 							gsap.to(ball, { duration: 0.5, borderColor:'#fff' });  
 						}
 					});
 					
-					$(".clapat-button .parallax-wrap").mouseenter(function(e) {
-						if ($('#clapat-page-content').hasClass("light-content")) {
+					$(".aryanjacob.in-button .parallax-wrap").mouseenter(function(e) {
+						if ($('#aryanjacob.in-page-content').hasClass("light-content")) {
 							gsap.to(ball, { duration: 0.05, borderColor:'#000'  });
 						} else {
 							gsap.to(ball, { duration: 0.05, borderColor:'#fff'  });
@@ -5240,11 +5240,11 @@ Function Core
 					});
 					
 					//Blog Hover Effects			
-					$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .clapat-sidebar-widget a").mouseenter(function(e) {	
+					$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .aryanjacob.in-sidebar-widget a").mouseenter(function(e) {	
 						gsap.to('#ball', {duration: 0.2, borderWidth: '1px', scale: 1, opacity:0});
 					});	
 							
-					$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .clapat-sidebar-widget a").mouseleave(function(e) {
+					$("#blog-page-nav .page-numbers li a, .post-page-numbers, #post-content a, #post-form a, #post-comments a, .wp-block-search__button, .aryanjacob.in-sidebar-widget a").mouseleave(function(e) {
 						gsap.to('#ball', {duration: 0.3, borderWidth: '4px', scale:0.5, opacity:1});
 					});
 				}
