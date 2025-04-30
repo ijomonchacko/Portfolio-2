@@ -261,41 +261,41 @@
 	Carousel
 ---------------------------------------------------*/
 	
-	.aryanjacob.in-slider-wrapper.content-slider  {
+	.clapat-slider-wrapper.content-slider  {
 		width:100%;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .aryanjacob.in-slider-viewport {
+	.content-slider .clapat-slider-viewport {
 		display: flex;
 		position: relative;
 		margin: 0 auto;
 	}
 	
-	.content-slider.looped-carousel .aryanjacob.in-slider-viewport {
+	.content-slider.looped-carousel .clapat-slider-viewport {
 		max-width:1280px;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-slider-viewport {
+	.content-slider.small-looped-carousel .clapat-slider-viewport {
 		max-width:600px;
 	}
 	
-	.content-slider .aryanjacob.in-slider {
+	.content-slider .clapat-slider {
 		padding: 0 0 0 0;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .aryanjacob.in-slide {
+	.content-slider .clapat-slide {
 		width: 100%;
 	}
 	
-	.content-slider.looped-carousel .aryanjacob.in-slide {
+	.content-slider.looped-carousel .clapat-slide {
 		padding:0 60px;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-slide {
+	.content-slider.small-looped-carousel .clapat-slide {
 		padding:0 20px;
 	}
 	
@@ -308,23 +308,23 @@
 		border-radius:8px;
 	}
 	
-	.content-slider.looped-carousel .aryanjacob.in-button-prev, .content-slider.looped-carousel .aryanjacob.in-button-next {
+	.content-slider.looped-carousel .clapat-button-prev, .content-slider.looped-carousel .clapat-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.looped-carousel .aryanjacob.in-button-prev, .disable-cursor .content-slider.looped-carousel .aryanjacob.in-button-next {
+	.disable-cursor .content-slider.looped-carousel .clapat-button-prev, .disable-cursor .content-slider.looped-carousel .clapat-button-next {
 		display:block;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-button-prev, .content-slider.small-looped-carousel .aryanjacob.in-button-next {
+	.content-slider.small-looped-carousel .clapat-button-prev, .content-slider.small-looped-carousel .clapat-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.small-looped-carousel .aryanjacob.in-button-prev, .disable-cursor .content-slider.small-looped-carousel .aryanjacob.in-button-next {
+	.disable-cursor .content-slider.small-looped-carousel .clapat-button-prev, .disable-cursor .content-slider.small-looped-carousel .clapat-button-next {
 		display:block;
 	}
 	
-	.content-slider .aryanjacob.in-pagination {
+	.content-slider .clapat-pagination {
 		bottom:20px;
 	}
 	
@@ -350,11 +350,11 @@
 		cursor:pointer;		
 	}
 	
-	.content-slider .aryanjacob.in-pagination {
+	.content-slider .clapat-pagination {
 		opacity:1;
 	}
 	
-	.content-slider .aryanjacob.in-pagination-bullet .parallax-wrap {
+	.content-slider .clapat-pagination-bullet .parallax-wrap {
 		width: 40px;
 		height: 40px;
 		display: inline-flex;
@@ -364,14 +364,14 @@
 		pointer-events: initial;
 	}
 	
-	.content-slider .aryanjacob.in-pagination-bullet .parallax-element {
+	.content-slider .clapat-pagination-bullet .parallax-element {
 		height: 40px;
 		width: 40px;
 		text-align: center;
 		line-height: 50px;
 	}
 	
-	.aryanjacob.in-pagination-bullet-active .path {
+	.clapat-pagination-bullet-active .path {
 		display: inline-block !important;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 0;
@@ -379,51 +379,51 @@
 		animation-iteration-count: unset;
 	}
 	
-	.dark-cursor .aryanjacob.in-pagination {
+	.dark-cursor .clapat-pagination {
 		color:#000;
 	}
 	
-	.light-cursor .aryanjacob.in-pagination {
+	.light-cursor .clapat-pagination {
 		color:#fff;
 	}
 	
-	.aryanjacob.in-pagination-bullet .path, .light-content.light-content-slider .aryanjacob.in-pagination-bullet .path {
+	.clapat-pagination-bullet .path, .light-content.light-content-slider .clapat-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .aryanjacob.in-pagination-bullet .path, .dark-section .aryanjacob.in-pagination-bullet .path, .light-content-slider .aryanjacob.in-pagination-bullet .path {
+	.light-content .clapat-pagination-bullet .path, .dark-section .clapat-pagination-bullet .path, .light-content-slider .clapat-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .light-section .aryanjacob.in-pagination-bullet .path {
+	.light-content .light-section .clapat-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.aryanjacob.in-pagination-bullet .solid-fill, .light-content.light-content-slider .aryanjacob.in-pagination-bullet .solid-fill {
+	.clapat-pagination-bullet .solid-fill, .light-content.light-content-slider .clapat-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.light-content .aryanjacob.in-pagination-bullet .solid-fill, .dark-section .aryanjacob.in-pagination-bullet .solid-fill, .light-content-slider .aryanjacob.in-pagination-bullet .solid-fill {
+	.light-content .clapat-pagination-bullet .solid-fill, .dark-section .clapat-pagination-bullet .solid-fill, .light-content-slider .clapat-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	 .light-content .light-section .aryanjacob.in-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .aryanjacob.in-pagination-bullet .solid-fill {
+	 .light-content .light-section .clapat-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .clapat-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	.light-cursor .aryanjacob.in-pagination-bullet .path {
+	.light-cursor .clapat-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.dark-cursor .aryanjacob.in-pagination-bullet .path {
+	.dark-cursor .clapat-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-cursor .aryanjacob.in-pagination-bullet .solid-fill {
+	.light-cursor .clapat-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.dark-cursor .aryanjacob.in-pagination-bullet .solid-fill {
+	.dark-cursor .clapat-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
@@ -441,7 +441,7 @@
 	  }
 	}
 	
-	.disable-cursor .full .looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		height: 100%;
@@ -451,7 +451,7 @@
 		margin: 0 auto;
 	}
 	
-	.disable-cursor .full .small-looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .small-looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		max-width:540px;
@@ -607,7 +607,7 @@
 		opacity:1;		
 	}
 	
-	.item .hero-video-wrapper, .aryanjacob.in-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .aryanjacob.in-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
+	.item .hero-video-wrapper, .clapat-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .clapat-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
 		position: absolute;
 		box-sizing: border-box;
 		min-width: 100%;
@@ -897,7 +897,7 @@
 		color:#fff;
 	}
 	
-	.aryanjacob.in-button-wrap {
+	.clapat-button-wrap {
 		display: flex;
 		position: relative;
 		justify-content: center;
@@ -909,24 +909,24 @@
 		color:#000;		
 	}
 	
-	.light-content .aryanjacob.in-button-wrap, .dark-section .aryanjacob.in-button-wrap {
+	.light-content .clapat-button-wrap, .dark-section .clapat-button-wrap {
 		color:#fff;	
 	}
 	
-	.light-content .light-section .aryanjacob.in-button-wrap {
+	.light-content .light-section .clapat-button-wrap {
 		color:#000;	
 	}
 	
-	.aryanjacob.in-button-wrap.circle {
+	.clapat-button-wrap.circle {
 		min-width:104px;
 		height:104px;	
 	}
 	
-	.text-align-center .aryanjacob.in-button-wrap {
+	.text-align-center .clapat-button-wrap {
 		margin:0 auto;
 	}
 	
-	.aryanjacob.in-button {		
+	.clapat-button {		
 		opacity:1;		
 	}
 	
@@ -1007,20 +1007,20 @@
 		background-color:transparent;
 	}
 	
-	.aryanjacob.in-button a {
+	.clapat-button a {
 		position: relative;
 		display: block;
 		height: 100%;
 	}
 	
-	.button-box.has-animation .aryanjacob.in-button a {
+	.button-box.has-animation .clapat-button a {
 		opacity:0;
 		white-space: nowrap;	
 		transition: opacity 0.5s ease 0.5s;
 		-webkit-transition: opacity 0.5s ease 0.5s;
 	}
 	
-	.button-box.has-animation .aryanjacob.in-button .animated a {
+	.button-box.has-animation .clapat-button .animated a {
 		opacity:1;
 	}
 	
@@ -1066,17 +1066,17 @@
 		text-align: center;
 	}
 	
-	.aryanjacob.in-button:hover .button-border span {
+	.clapat-button:hover .button-border span {
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 		transform-origin: 0% 0%;
 	}
 	
-	.aryanjacob.in-button-wrap.circle:hover .button-border {
+	.clapat-button-wrap.circle:hover .button-border {
 		border: solid 2px transparent;	
 	}
 	
-	.aryanjacob.in-button-wrap.circle .button-border input, .aryanjacob.in-button-wrap.circle .button-border a {
+	.clapat-button-wrap.circle .button-border input, .clapat-button-wrap.circle .button-border a {
 		height: 100px;
 		width: 100px;
 		line-height: 100px;
@@ -3357,16 +3357,16 @@
 		pointer-events:none;
 	}
 	
-	.carousel-shortcode-thumbs .aryanjacob.in-item {
+	.carousel-shortcode-thumbs .clapat-item {
 		width: calc(20% - 80px);
 		margin:60px 40px;
 	}
 	
-	.carousel-shortcode-thumbs.is_active .aryanjacob.in-item {
+	.carousel-shortcode-thumbs.is_active .clapat-item {
 		pointer-events:initial;
 	}
 	
-	.carousel-shortcode-thumbs .aryanjacob.in-item .slide-inner {
+	.carousel-shortcode-thumbs .clapat-item .slide-inner {
 		padding-top: 0;
 		width: 100%;
 		height: auto;
@@ -4107,19 +4107,19 @@
 
 @media only screen and (max-width: 1024px) {
 	
-	.content-slider.looped-carousel .aryanjacob.in-slide {
+	.content-slider.looped-carousel .clapat-slide {
 		padding:0 40px;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-slide {
+	.content-slider.small-looped-carousel .clapat-slide {
 		padding:0 40px;
 	}
 	
-	.disable-cursor .full .looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
 		width: calc(100% - 80px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .small-looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
 		width: calc(100% - 80px);
 		max-width:520px;
 	}		
@@ -4268,29 +4268,29 @@
 
 @media only screen and (max-width: 767px) {
 	
-	.content-slider.looped-carousel .aryanjacob.in-slide {
+	.content-slider.looped-carousel .clapat-slide {
 		padding:0 30px;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-slide {
+	.content-slider.small-looped-carousel .clapat-slide {
 		padding:0 30px;
 	}
 	
-	.disable-cursor .full .looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
 		width: calc(100% - 60px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .small-looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
 		width: calc(100% - 60px);
 		max-width:540px;
 	}
 	
-	.content-slider .aryanjacob.in-pagination-bullet .parallax-wrap {
+	.content-slider .clapat-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
 	
-	.content-slider .aryanjacob.in-pagination-bullet .parallax-wrap {
+	.content-slider .clapat-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
@@ -4585,24 +4585,24 @@
 		padding-left:0px;
 	}
 	
-	.content-slider.looped-carousel .aryanjacob.in-slide {
+	.content-slider.looped-carousel .clapat-slide {
 		padding:0 20px;
 	}
 	
-	.content-slider.small-looped-carousel .aryanjacob.in-slide {
+	.content-slider.small-looped-carousel .clapat-slide {
 		padding:0 20px;
 	}
 	
-	.disable-cursor .full .looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
 		width: calc(100% - 40px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .aryanjacob.in-controls, .disable-cursor .full_elementor .small-looped-carousel .aryanjacob.in-controls {
+	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
 		width: calc(100% - 40px);
 		max-width:560px;
 	}		
 			
-	.aryanjacob.in-button {
+	.clapat-button {
     	margin-bottom: 20px;
 	}
 	

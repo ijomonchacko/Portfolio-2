@@ -2,7 +2,7 @@
 Project:	Serano - Creative Portfolio Template
 Version:	1.0
 Last change:	15/08/2022
-Assigned to:	www.aryanjacob.in 
+Assigned to:	www.ClaPat.com 
 Primary use:	Showcase Portfolio 
 -------------------------------------------------------------------*/
 
@@ -1430,7 +1430,7 @@ Primary use:	Showcase Portfolio
       }
 	}
 	
-	.show-loader a, .show-loader .aryanjacob.in-nav-wrapper, .scale-up a, .scale-up .hide-ball, scale-up .link, .scale-up .button-wrap, .scale-up #burger-wrapper, .scale-up .disable-drag, .scale-drag a, .scale-drag .move-title {
+	.show-loader a, .show-loader .clapat-nav-wrapper, .scale-up a, .scale-up .hide-ball, scale-up .link, .scale-up .button-wrap, .scale-up #burger-wrapper, .scale-up .disable-drag, .scale-drag a, .scale-drag .move-title {
 		pointer-events:none!important;
 	}
 	
@@ -1664,7 +1664,7 @@ Primary use:	Showcase Portfolio
 ---------------------------------------------------*/	
 	
 		
-	.aryanjacob.in-header {
+	.clapat-header {
 		width:100%;
 		height:120px;
 		left:0;
@@ -1707,24 +1707,24 @@ Primary use:	Showcase Portfolio
 		color:#fff;
 	}
 	
-	#aryanjacob.in-logo {
+	#clapat-logo {
 		position: relative;
 		display: block;
 		pointer-events: initial;
 		z-index: 10;
 	}
 	
-	#aryanjacob.in-logo a {
+	#clapat-logo a {
 		display:block;
 		-webkit-transition: transform 0.5s ease-in-out 0.1s;
 		transition: transform 0.5s ease-in-out 0.1s;	
 	}
 	
-	#aryanjacob.in-logo a.disable, .open #aryanjacob.in-logo a {
+	#clapat-logo a.disable, .open #clapat-logo a {
 		pointer-events: none;
 	}
 	
-	#aryanjacob.in-logo img {
+	#clapat-logo img {
 		display: block;
 		height: 50px;
 		width: auto;
@@ -1732,79 +1732,79 @@ Primary use:	Showcase Portfolio
 		
 	}
 	
-	#aryanjacob.in-page-content:not(.no-css-animation) #aryanjacob.in-logo img {
+	#clapat-page-content:not(.no-css-animation) #clapat-logo img {
 		/*-webkit-transition: opacity 0.15s ease-in-out 0s;
 		transition: opacity 0.15s ease-in-out 0s;*/
 	}
 	
-	#aryanjacob.in-logo img.black-logo {
+	#clapat-logo img.black-logo {
 		opacity:1;
 	}
 	
-	.light-content #aryanjacob.in-logo img.black-logo {
+	.light-content #clapat-logo img.black-logo {
 		opacity:0;
 	}
 	
-	#aryanjacob.in-logo img.white-logo {
+	#clapat-logo img.white-logo {
 		position:absolute;
 		top:0;
 		left:0;
 		opacity:0;
 	}
 	
-	.light-content #aryanjacob.in-logo img.white-logo {
+	.light-content #clapat-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.white-header #aryanjacob.in-logo img.black-logo {
+	.white-header #clapat-logo img.black-logo {
 		opacity:0;
 	}
 	
-	.light-content .white-header #aryanjacob.in-logo img.black-logo {
+	.light-content .white-header #clapat-logo img.black-logo {
 		opacity:1;
 	}
 	
-	.light-content .white-header.over-white-section #aryanjacob.in-logo img.black-logo, .show-loader1 .light-content .white-header #aryanjacob.in-logo img.black-logo {
+	.light-content .white-header.over-white-section #clapat-logo img.black-logo, .show-loader1 .light-content .white-header #clapat-logo img.black-logo {
 		opacity:0;
 	}
 	
-	.white-header #aryanjacob.in-logo img.white-logo {
+	.white-header #clapat-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.light-content .white-header #aryanjacob.in-logo img.white-logo {
+	.light-content .white-header #clapat-logo img.white-logo {
 		opacity:0;
 	}
 	
-	.light-content .white-header.over-white-section #aryanjacob.in-logo img.white-logo, .show-loader1 .light-content .white-header #aryanjacob.in-logo img.white-logo {
+	.light-content .white-header.over-white-section #clapat-logo img.white-logo, .show-loader1 .light-content .white-header #clapat-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.menu-open.light-content .slide-in #aryanjacob.in-logo img.white-logo {
+	.menu-open.light-content .slide-in #clapat-logo img.white-logo {
 		opacity:1;
 	}
 	
-	.aryanjacob.in-nav-wrapper {
+	.clapat-nav-wrapper {
 		pointer-events: none;
 	}
 	
-	.aryanjacob.in-nav-wrapper.open {
+	.clapat-nav-wrapper.open {
 		pointer-events: initial;
 	}
 	
-	.dark-content-header #aryanjacob.in-logo img.black-logo {
+	.dark-content-header #clapat-logo img.black-logo {
 		opacity:1!important;		
 	}
 	
-	.dark-content-header #aryanjacob.in-logo img.white-logo {
+	.dark-content-header #clapat-logo img.white-logo {
 		opacity:0!important;		
 	}
 	
-	.light-content-header #aryanjacob.in-logo img.black-logo {
+	.light-content-header #clapat-logo img.black-logo {
 		opacity:0!important;		
 	}
 	
-	.light-content-header #aryanjacob.in-logo img.white-logo {
+	.light-content-header #clapat-logo img.white-logo {
 		opacity:1!important;		
 	}
 	
@@ -1817,7 +1817,7 @@ Primary use:	Showcase Portfolio
 			color:#000;
 		}
 		
-		.classic-menu .aryanjacob.in-nav-wrapper {
+		.classic-menu .clapat-nav-wrapper {
 			position: relative;
 			width: auto;
 			top: 0px;
@@ -1830,7 +1830,7 @@ Primary use:	Showcase Portfolio
 			opacity: 1 !important;
 		}
 		
-		.aryanjacob.in-header.classic-menu .aryanjacob.in-nav-wrapper {
+		.clapat-header.classic-menu .clapat-nav-wrapper {
 			position: absolute;
 			display: flex;
 			align-items: center;
@@ -1932,27 +1932,27 @@ Primary use:	Showcase Portfolio
 		}
 		
 		
-		.aryanjacob.in-header.classic-menu .flexnav li a .before-span span {
+		.clapat-header.classic-menu .flexnav li a .before-span span {
 			padding:3px 10px;
 			border-radius:3px;
 		}
 		
-		.aryanjacob.in-header.classic-menu .flexnav li a.active .before-span span {
+		.clapat-header.classic-menu .flexnav li a.active .before-span span {
 			-webkit-transform: translateY(-100%);
 			transform: translateY(-100%);
 		}
 		
-		.load-next-page .aryanjacob.in-header.classic-menu .flexnav li a.active .before-span span {
+		.load-next-page .clapat-header.classic-menu .flexnav li a.active .before-span span {
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
 		
-		.aryanjacob.in-header.classic-menu .flexnav li.disable a.active .before-span span {
+		.clapat-header.classic-menu .flexnav li.disable a.active .before-span span {
 			-webkit-transform: translateY(0);
 			transform: translateY(0);
 		}
 		
-		.aryanjacob.in-header.classic-menu .flexnav li.item-with-ul.disable:hover a.active .before-span span {
+		.clapat-header.classic-menu .flexnav li.item-with-ul.disable:hover a.active .before-span span {
 			-webkit-transform: translateY(-100%);
 			transform: translateY(-100%);
 		}
@@ -2157,7 +2157,7 @@ Primary use:	Showcase Portfolio
 		
 		/*-- Full Screen Menu --*/	
 		
-		.fullscreen-menu .aryanjacob.in-nav-wrapper {
+		.fullscreen-menu .clapat-nav-wrapper {
 			height: 100vh;
 			position: fixed;
 			top:0;
@@ -2170,7 +2170,7 @@ Primary use:	Showcase Portfolio
 			padding:20px 0;
 		}
 		
-		.fullscreen-menu .aryanjacob.in-nav-wrapper.open {
+		.fullscreen-menu .clapat-nav-wrapper.open {
 			visibility:visible;
 			pointer-events:initial;
 		}
@@ -2338,7 +2338,7 @@ Primary use:	Showcase Portfolio
 	
 	}
 
-	.aryanjacob.in-nav-wrapper, .aryanjacob.in-nav-wrapper.open {
+	.clapat-nav-wrapper, .clapat-nav-wrapper.open {
 		background:transparent;
 	}
 
@@ -2662,7 +2662,7 @@ Primary use:	Showcase Portfolio
 	05. Main Content
 ---------------------------------------------------*/		
 	
-	.show-loader #aryanjacob.in-page-content {
+	.show-loader #clapat-page-content {
 		pointer-events: none !important;
 	}
 	
@@ -2698,7 +2698,7 @@ Primary use:	Showcase Portfolio
 	06. Footer Elements
 ---------------------------------------------------*/		
 	
-	.aryanjacob.in-footer {
+	.clapat-footer {
 		position:relative;
 		width:100%;
 		height:120px;
@@ -2711,11 +2711,11 @@ Primary use:	Showcase Portfolio
 		pointer-events:none;
 	}
 	
-	.aryanjacob.in-footer.fixed {
+	.clapat-footer.fixed {
 		position:fixed;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer{
+	.clapat-footer.showcase-footer{
 		position:fixed;
 	}
 	
@@ -2777,7 +2777,7 @@ Primary use:	Showcase Portfolio
 		color: #fff;
 	}
 	
-	.aryanjacob.in-footer .socials-wrap {
+	.clapat-footer .socials-wrap {
 		margin-top:0px;
 	}
 	
@@ -3274,7 +3274,7 @@ Primary use:	Showcase Portfolio
 		color:#000;
 	}
 	
-	.aryanjacob.in-footer .link-text {
+	.clapat-footer .link-text {
 		float:left;
 		opacity:0;
 		margin-top: 25px;
@@ -3369,7 +3369,7 @@ Primary use:	Showcase Portfolio
 		bottom:14px;
 	}
 	
-	.aryanjacob.in-nav-wrapper, .aryanjacob.in-nav-wrapper.open {
+	.clapat-nav-wrapper, .clapat-nav-wrapper.open {
 		background:transparent;
 	}
 	
@@ -3401,7 +3401,7 @@ Primary use:	Showcase Portfolio
   		bottom: 40px;
 	}
 	
-	.aryanjacob.in-header {
+	.clapat-header {
     	height: 100px;
 	}
 	
@@ -3410,12 +3410,12 @@ Primary use:	Showcase Portfolio
 	}
 	
 	@media (min-width: 1025px) {
-	  .aryanjacob.in-header.classic-menu .aryanjacob.in-nav-wrapper {
+	  .clapat-header.classic-menu .clapat-nav-wrapper {
 		top: 17px;
 	  }
 	}
 	
-	.aryanjacob.in-footer {
+	.clapat-footer {
     	height: 100px;
 	}
 	
@@ -3496,7 +3496,7 @@ Primary use:	Showcase Portfolio
 		padding: 10px 40px;
 	}
 	
-	.aryanjacob.in-nav-wrapper {
+	.clapat-nav-wrapper {
 		height: 100vh;
 		height: 100dvh;
 		width: 100%;
@@ -3510,7 +3510,7 @@ Primary use:	Showcase Portfolio
 		padding:20px 0;	
 	}
 	
-	.aryanjacob.in-nav-wrapper.open {
+	.clapat-nav-wrapper.open {
 		visibility:visible;
 		pointer-events:initial;
 	}
@@ -3879,7 +3879,7 @@ Primary use:	Showcase Portfolio
   		bottom: 30px;
 	}
 	
-	.aryanjacob.in-header {
+	.clapat-header {
 		height:80px;
 	}
 	
@@ -3892,13 +3892,13 @@ Primary use:	Showcase Portfolio
 		display:none;
 	}
 	
-	.aryanjacob.in-header .button-text {
+	.clapat-header .button-text {
     	display: block!important;
 		opacity:0;
 		pointer-events:none;
   	}
 	
-	#aryanjacob.in-logo {
+	#clapat-logo {
 		left: 30px;
 	}
 	
@@ -3910,7 +3910,7 @@ Primary use:	Showcase Portfolio
 		right: 0px;
 	}
 	
-	.aryanjacob.in-header .button-text {
+	.clapat-header .button-text {
 		display: none;
 	}
 	
@@ -3932,7 +3932,7 @@ Primary use:	Showcase Portfolio
 		display: block;
 	}
 	
-	.aryanjacob.in-footer {
+	.clapat-footer {
 		height: 80px;
 	}
 	
@@ -3997,7 +3997,7 @@ Primary use:	Showcase Portfolio
 		line-height: 20px;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .arrows-wrap {
+	.clapat-footer.showcase-footer .arrows-wrap {
 		right: auto;
 		left: -30px;
 		float: left;
@@ -4089,7 +4089,7 @@ Primary use:	Showcase Portfolio
   		padding: 0 20px;
 	}
 	
-	#aryanjacob.in-logo {
+	#clapat-logo {
 		left: 20px;
 	}
 	
@@ -4106,7 +4106,7 @@ Primary use:	Showcase Portfolio
 		margin:0;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer #footer-container {
+	.clapat-footer.showcase-footer #footer-container {
 		padding: 0px 20px;
 	}
 	
@@ -4119,30 +4119,30 @@ Primary use:	Showcase Portfolio
     	width: 40px;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .arrows-wrap {
+	.clapat-footer.showcase-footer .arrows-wrap {
 		right: 0;
 		left: 0;
 		float: none;
 		margin: auto;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .arrows-wrap {
+	.clapat-footer.showcase-footer .arrows-wrap {
 		width: 100%;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .prev-wrap, .aryanjacob.in-footer.showcase-footer .next-wrap {
+	.clapat-footer.showcase-footer .prev-wrap, .clapat-footer.showcase-footer .next-wrap {
     	width: 60px;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .footer-middle {
+	.clapat-footer.showcase-footer .footer-middle {
 		top: 0px;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .showcase-subtitles-wrap {
+	.clapat-footer.showcase-footer .showcase-subtitles-wrap {
 		left: 0;
 	}
 	
-	.aryanjacob.in-footer.showcase-footer .socials-wrap {
+	.clapat-footer.showcase-footer .socials-wrap {
 		display:none;
 	}
 	
