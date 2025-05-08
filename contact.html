@@ -181,23 +181,28 @@
                                 <div id="itemsWrapper" class="webgl-fitthumbs fx-one">
                                 
                                     <!-- Row -->
-                                    <div class="content-row dark-section" data-bgcolor="#0c0c0c">
-                                    
-                                        <div class="clipped-image-wrapper">
-                                        
-                                            <div class="clipped-image-pin">                                    	
-                                                <div class="clipped-image">
-                                                    <div id="map_canvas"></div>
-                                                    <div class="clipped-image-gradient"></div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="clipped-image-content"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div>
-                                        
-                                        </div>
-                                        
-                                    </div> 
-                                    <!--/Row -->
+<div class="content-row dark-section" data-bgcolor="#0c0c0c">
+    <div class="clipped-image-wrapper">
+    
+        <div class="clipped-image-pin">
+            <div class="clipped-image" style="position: relative;">
+                <!-- Embed Google Map -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70543.23225414657!2d55.39323831750188!3d25.31516800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef4d6e2f17a6f8f%3A0x2ec2763b7f1fa5ad!2sAl%20Nadha%2C%20Sharjah%2C%20UAE!5e0!3m2!1sen!2sin!4v1686158893183!5m2!1sen!2sin" 
+                    width="100%" height="400" style="border:0; position: relative; z-index: 10;" 
+                    allowfullscreen="" loading="lazy"></iframe>
+                <div class="clipped-image-gradient" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5;"></div>
+            </div>
+        </div>
+
+        <div class="clipped-image-content">
+            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        </div>
+    
+    </div>
+</div> 
+<!--/Row -->
+
                                     
                                     
                                     <!-- Row -->
@@ -208,43 +213,66 @@
                                         <hr><hr> 
                                         
                                         <!-- Contact Formular -->
-                                        <div id="contact-formular">
-                                        
-                                            <div id="message"></div>
-                                        
-                                            <form method="post" action="contact.php" name="contactform" id="contactform">                             
-                                                <div class="name-box">        
-                                                    <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
-                                                </div>                                                        
-                                                <div class="email-box">
-                                                    <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"><label class="input_label"></label>
-                                                </div>                            
-                                                <div class="message-box">
-                                                    <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project"></textarea><label class="input_label slow"></label>
-                                                </div>
-                                                
-                                                <div class="verify-box">                                        
-                                                    <ul class="verify-sum">
-                                                        <li>40</li>
-                                                        <li>+</li>
-                                                        <li>7</li>
-                                                        <li>=</li>
-                                                    </ul>
-                                                    <input name="verify" type="text" id="verify" size="47" value="">
-                                                    <p class="required"><span>*</span> Captcha Validation</p>
-                                                </div>
-                                                                             
-                                                <div class="button-box has-animation" data-delay="100">             
-                                                    <div class="clapat-button-wrap parallax-wrap hide-ball">
-                                                        <div class="clapat-button parallax-element">
-                                                            <div class="button-border rounded"><input type="submit" class="send_message" id="submit" value="Send Mail"></div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            </form>                        
-                                                                    
-                                        </div>
-                                        <!--/Contact Formular -->
+<div id="contact-formular">
+    
+    <div id="message"></div>
+    
+    <!-- Changed the form to trigger mailto with query parameters on submit -->
+    <form name="contactform" id="contactform" method="post" onsubmit="return sendMail()">
+        <div class="name-box">        
+            <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
+        </div>                                                         
+        <div class="email-box">
+            <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"><label class="input_label"></label>
+        </div>                            
+        <div class="message-box">
+            <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project"></textarea><label class="input_label slow"></label>
+        </div>
+
+        <!-- Optional Captcha or verification box -->
+        <div class="verify-box">                                        
+            <ul class="verify-sum">
+                <li>40</li>
+                <li>+</li>
+                <li>7</li>
+                <li>=</li>
+            </ul>
+            <input name="verify" type="text" id="verify" size="47" value="">
+            <p class="required"><span>*</span> Captcha Validation</p>
+        </div>
+        
+        <div class="button-box has-animation" data-delay="100">             
+            <div class="clapat-button-wrap parallax-wrap hide-ball">
+                <div class="clapat-button parallax-element">
+                    <div class="button-border rounded">
+                        <input type="submit" class="send_message" id="submit" value="Send Mail">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </form>                        
+</div>
+<!--/Contact Formular -->
+
+<script>
+function sendMail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('comments').value;
+    
+    // Construct the mailto link with dynamic subject and body
+    var subject = "Project Inquiry from " + name;
+    var body = "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message;
+    var mailtoLink = "mailto:aryanjacob3@mail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+    // Open the email client (Gmail, Outlook, etc.)
+    window.location.href = mailtoLink;
+
+    // Return false to prevent form submission and page reload
+    return false;
+}
+</script>
+
                                     </div> 
                                     <!--/Row -->
                                     
@@ -259,7 +287,7 @@
                                                     <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="box-icon-content">
-                                                    <h6 class="no-margins">Al Nadha, Sharjah, UAE                                                    </h6>
+                                                    <h6 class="no-margins">Al Nadha, Dubai, UAE                                                    </h6>
                                                     <p>Address</p>
                                                 </div>
                                             </div> 
@@ -388,7 +416,8 @@
     <script src='../../ajax/libs/three.js/r128/three.min.js'></script>
 	<script src='../../ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
 	<script src='../../ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js'></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&callback=initMap" async defer></script>
+
     
     <script src="js/clapat.js"></script>
 	<script src="js/plugins.js"></script>
@@ -396,6 +425,19 @@
     <script src="js/common.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function initMap() {
+          // Initialize the map
+          var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            center: {lat: 25.315168, lng: 55.393238}, // Set your map center
+            zoom: 10,
+            gestureHandling: 'none', // Disable zoom with scroll or touch
+            disableDoubleClickZoom: true, // Optional: Disable zoom on double click
+            scrollwheel: false, // Optional: Disable zoom with mouse scroll
+          });
+        }
+      </script>
+      
 
 
 
