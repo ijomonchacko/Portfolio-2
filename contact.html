@@ -213,33 +213,26 @@
                                         
                                         <!-- Contact Formular -->
 <div id="contact-formular">
-    
-    <div id="message"></div>
-    
-    <!-- Changed the form to trigger mailto with query parameters on submit -->
-    <form name="contactform" id="contactform" method="post" onsubmit="return sendMail()">
+
+    <form action="https://formsubmit.co/ajax/jomunchacko@gmail.com" method="POST" id="contactform">
+        <!-- No captcha & prevent redirect -->
+        <input type="hidden" name="_captcha" value="false">
+
         <div class="name-box">        
-            <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
-        </div>                                                         
+            <input name="name" type="text" id="name" size="30" placeholder="What's Your Name" required>
+            <label class="input_label"></label>
+        </div>                                                        
+
         <div class="email-box">
-            <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"><label class="input_label"></label>
+            <input name="email" type="email" id="email" size="30" placeholder="Your Email" required>
+            <label class="input_label"></label>
         </div>                            
+
         <div class="message-box">
-            <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project"></textarea><label class="input_label slow"></label>
+            <textarea name="message" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project" required></textarea>
+            <label class="input_label slow"></label>
         </div>
 
-        <!-- Optional Captcha or verification box -->
-        <div class="verify-box">                                        
-            <ul class="verify-sum">
-                <li>40</li>
-                <li>+</li>
-                <li>7</li>
-                <li>=</li>
-            </ul>
-            <input name="verify" type="text" id="verify" size="47" value="">
-            <p class="required"><span>*</span> Captcha Validation</p>
-        </div>
-        
         <div class="button-box has-animation" data-delay="100">             
             <div class="clapat-button-wrap parallax-wrap hide-ball">
                 <div class="clapat-button parallax-element">
@@ -249,27 +242,56 @@
                 </div>
             </div> 
         </div>
-    </form>                        
+
+    </form> 
+
+    <!-- Custom Thank You message -->
+    <div id="form-message" style="display:none; margin-top:20px; color:#00cc66; font-weight:bold; font-size:18px;">
+        Thank you! Your message has been sent. <br> <span style="font-size:14px;">— With regards, Jomon Chacko</span>
+    </div>
+
 </div>
 <!--/Contact Formular -->
 
+<!-- GSAP (if not loaded yet) -->
+<script src="/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+<!-- JS to handle AJAX submission and GSAP animation -->
 <script>
-function sendMail() {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('comments').value;
-    
-    // Construct the mailto link with dynamic subject and body
-    var subject = "Project Inquiry from " + name;
-    var body = "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message;
-    var mailtoLink = "mailto:aryanjacob3@mail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+document.getElementById('contactform').addEventListener('submit', function(e) {
+    e.preventDefault();  // Prevent normal form submit
 
-    // Open the email client (Gmail, Outlook, etc.)
-    window.location.href = mailtoLink;
+    const form = e.target;
+    const formData = new FormData(form);
 
-    // Return false to prevent form submission and page reload
-    return false;
-}
+    fetch(form.action, {
+        method: 'POST',
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            form.reset();
+
+            const message = document.getElementById('form-message');
+            message.style.display = 'block';
+            gsap.fromTo(message, 
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+            );
+
+            // Optional: Hide after 5 seconds
+            setTimeout(() => {
+                gsap.to(message, { opacity: 0, y: 30, duration: 0.8, ease: "power3.in", onComplete: () => {
+                    message.style.display = 'none';
+                }});
+            }, 5000);
+
+        } else {
+            alert('There was a problem sending the message. Please try again.');
+        }
+    }).catch(error => {
+        alert('There was a problem sending the message. Please try again.');
+    });
+});
 </script>
 
                                     </div> 
