@@ -204,15 +204,15 @@
 
                                     
                                     
-                                    <!-- Row -->
-                                    <div class="content-row row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#0c0c0c">
+ <!-- Row -->
+      <div class="content-row row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#0c0c0c">
                                         
-                                        <h2 class="has-shuffle">Let's Talk</h2>
+        <h2 class="has-shuffle">Let's Talk</h2>
                                         
-                                        <hr><hr> 
+        <hr><hr> 
                                         
-                                        <!-- Contact Formular -->
-<div id="contact-formular">
+     <!-- Contact Formular -->
+     <div id="contact-formular">
 
     <form action="https://formsubmit.co/ajax/jomunchacko@gmail.com" method="POST" id="contactform">
         <!-- No captcha & prevent redirect -->
@@ -248,7 +248,6 @@
 </div>
 <!--/Contact Formular -->
 
-<!-- JS to handle AJAX submission and redirect -->
 <script>
 document.getElementById('contactform').addEventListener('submit', function(e) {
     e.preventDefault();  // Prevent normal form submit
@@ -261,8 +260,8 @@ document.getElementById('contactform').addEventListener('submit', function(e) {
         body: formData
     }).then(response => {
         if (response.ok) {
-            // Redirect to desired website after successful submission
-            window.location.href = "https://example.com";
+            // Redirect to the thanks.html page after successful submission
+            window.location.href = "thanks.html";
         } else {
             alert('There was a problem sending the message. Please try again.');
         }
