@@ -248,6 +248,7 @@
 </div>
 <!--/Contact Formular -->
 
+<!-- JS to handle AJAX submission and redirect with transition -->
 <script>
 document.getElementById('contactform').addEventListener('submit', function(e) {
     e.preventDefault();  // Prevent normal form submit
@@ -255,13 +256,19 @@ document.getElementById('contactform').addEventListener('submit', function(e) {
     const form = e.target;
     const formData = new FormData(form);
 
+    // Add transition effect using JS
+    document.body.style.transition = 'opacity 1s ease-out';  // Transition on opacity
+    document.body.style.opacity = '0';  // Start fading out
+
     fetch(form.action, {
         method: 'POST',
         body: formData
     }).then(response => {
         if (response.ok) {
-            // Redirect to the thanks.html page after successful submission
-            window.location.href = "thanks.html";
+            // Wait for the transition to finish, then redirect to thanks.html
+            setTimeout(function() {
+                window.location.href = "thanks.html";
+            }, 1000); // Matches the duration of the fade-out (1s)
         } else {
             alert('There was a problem sending the message. Please try again.');
         }
@@ -270,6 +277,7 @@ document.getElementById('contactform').addEventListener('submit', function(e) {
     });
 });
 </script>
+
 
                                     
                                     <!-- Row -->
