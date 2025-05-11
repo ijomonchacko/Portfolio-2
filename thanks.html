@@ -1,115 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks Page + ScrollSmoother Demo</title>
-
-  <!-- Your CSS (for Scroll and Layout) -->
-  <link rel="stylesheet" href="thanks/style.css" />
-
-  <!-- GSAP core -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-
-  <!-- ScrollTrigger -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-
-  <!-- ScrollSmoother -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-
-  <!-- SimplexNoise (needed for floating circles) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-
-</head>
-<body>
-
-<div id="smooth-wrapper">
-  <div id="smooth-content">
-
-    <!-- HEADER & HERO SECTION (Your existing code) -->
-    <header>
-      <div class="logo">
-        <svg viewBox="0 0 370 100.34">
-          <g xmlns="http://www.w3.org/2000/svg" fill="#111" transform="matrix(.34923 0 0 .34923 -2.282 -2.195)">
-            <defs>
-              <path id="a" d="M7 6.5h286v287.1H7z" />
-            </defs>
-            <clipPath id="b">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a" overflow="visible" />
-            </clipPath>
-            <g style="clip-path:url(#b)">
-              <path d="M150 198.8c26.1 0 47.2 21.2 47.2 47.4s-21.1 47.4-47.2 47.4-47.2-21.2-47.2-47.4 21.1-47.4 47.2-47.4zM198.7 152.9c-.1-1.1-.1-2.2-.1-3.3.1-12.4-4.5-24.4-13.3-33.2l-2-2c-8.7-8.7-20.5-13.4-32.8-13.3h-1.4c-12.3-.2-24.1 4.6-32.8 13.3l-2 2c-8.8 8.8-13.3 20.8-13.3 33.2 0 1.1 0 2.2-.1 3.3-1.3 23.3-19.8 42.4-43.1 44.3-29.3 2.5-53.5-21.9-51.1-51.3 1.9-23.3 21-41.8 44.1-43.2 1-.1 2.2-.1 3.2-.1 12.4.1 24.3-4.5 33.1-13.3l2-2c8.8-8.8 13.3-20.8 13.3-33.2 0-1.6.1-3.3.2-4.9 2.1-22.9 20.8-41.1 43.7-42.8C174 4.5 197 26.4 197 53.6v.7c-.2 12.3 4.6 24.2 13.3 32.9l2 2c8.8 8.8 20.7 13.4 33.1 13.3 1 0 2.1 0 3.2.1 23.3 1.3 42.2 19.9 44.1 43.2 2.5 29.4-21.8 53.7-51.1 51.3-23.1-1.8-41.5-21-42.9-44.2z" />
-            </g>
-          </g>
-        </svg>
+<html data-wf-page="681f04baed1905647689398e" data-wf-site="681f04b9ed19056476893945" data-wf-status="1" lang="en">
+   <head>
+    
+      <link href="/css/form.css" rel="stylesheet" type="text/css"/>
+      <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0c7c2682-6342-a43c-b392-cb6e493522ea"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a2ff7de1-f5c8-9a0f-7d5f-4812849e6410"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0cc9797f-b74e-017e-ffb6-8be9cac3d6a0"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0c7c2682-6342-a43c-b392-cb6e493522ea"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a2ff7de1-f5c8-9a0f-7d5f-4812849e6410"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0cc9797f-b74e-017e-ffb6-8be9cac3d6a0"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0c7c2682-6342-a43c-b392-cb6e493522ea"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a2ff7de1-f5c8-9a0f-7d5f-4812849e6410"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0cc9797f-b74e-017e-ffb6-8be9cac3d6a0"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);opacity:0;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0c7c2682-6342-a43c-b392-cb6e493522ea"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(3.712deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a2ff7de1-f5c8-9a0f-7d5f-4812849e6410"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-0.463deg) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0cc9797f-b74e-017e-ffb6-8be9cac3d6a0"] {-webkit-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-moz-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);-ms-transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);transform:translate3d(0, 30vh, 0) scale3d(1.3, 1.3, 1) rotateX(0) rotateY(0) rotateZ(-4.89deg) skew(0, 0);opacity:0;}}</style>
+      <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+      <link href="images/black-p-1080.png" rel="shortcut icon" type="image/x-icon"/>
+      <link href="images/black-p-1080.png" rel="apple-touch-icon"/>
+   </head>
+   <body>
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+         <div class="container container-large w-container">
+            <div class="navbar-component">
+               <a href="images/black.png" data-w-id="c08c31ce-33d2-82a1-d45c-c9af799b5687" aria-current="page" class="brand w-nav-brand w--current"><img sizes="(max-width: 767px) 98vw, (max-width: 991px) 95vw, 940px" srcset="/images/black-p-500.png 500w, /images/black-p-800.png 800w, /images/black-p-1080.png 1080w, /images/black.png 1250w" alt="" src="/images/black.png" loading="lazy"/></a>
+               <div class="nav-menu-wrap">
+                  <div class="right-navbar-content">
+                     <a href="https://www.aryanjacob.in/" class="link-block-navbar w-inline-block">
+                        <div>Home</div>
+                     </a>
+                     <a href="https://www.aryanjacob.in/index-portfolio.html" class="link-block-navbar w-inline-block">
+                        <div>Portifolio</div>
+                     </a>
+                     <a href="https://www.aryanjacob.in/contact.html" class="link-block-navbar w-inline-block">
+                        <div>Contact</div>
+                     </a>
+                  </div>
+                  <div>
+                     <div class="nav-menu-wrap">
+                        <div class="menu-button w-nav-button">
+                           <div class="menu-icon w-icon-nav-menu"></div>
+                        </div>
+                     </div>
+                     <nav role="navigation" class="nav-menu w-nav-menu">
+                        <a href="/works" class="nav-link w-inline-block">
+                           <div>Portifolio</div>
+                        </a>
+                        <a href="/contact" class="nav-link w-inline-block">
+                           <div>Contact</div>
+                        </a>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <nav>
-        <ul role="list">
-          <li><a href="https://greensock.com/forums/topic/36177-scrollsmoother-data-speed-and-firstlast-folds/#comment-183450">about</a></li>
-        </ul>
-      </nav>
-    </header>
+      <section class="hero">
+         <div class="hero-wrapper">
+            <div class="w-layout-blockcontainer container w-container">
+               <div class="hero-header">
+                  <div style="-webkit-transform:translate3d(0, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading">
+                     <h1 class="heading-1">&quot;Thanks for sending that <br/>— we’ve got it!&quot;</h1>
+                  </div>
+               </div>
+            </div>
+           <div class="hero-interaction-wrapper">
+  <div class="hero-card first">
+    <img 
+      src="port-images/auto3.jpg" 
+      alt="BMW Car" 
+      class="image" 
+      width="600" 
+      height="900"
+    />
+  </div>
 
-    <section class="hero pad-l">
-      <div class="heading">
-        <div class="pin">
-          <h1><span class="clamp">Clamp
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842.14 500">
-              <path class="draw" d="M336.2,130.05C261.69,118,16.52,122,20.65,244.29c4.17,123,484.3,299.8,734.57,108.37,244-186.65-337.91-311-546.54-268.47" fill="none" stroke="#8486aa" stroke-miterlimit="10" stroke-width="8" />
-            </svg>
-          </span><span class="yt">your triggers</span></h1>
-        </div>
-      </div>
+  <div class="hero-card second">
+    <img 
+      src="port-images/auto1.jpg" 
+      alt="Audi Car" 
+      class="image" 
+      width="600" 
+      height="900"
+    />
+  </div>
 
-      <div class="images">
-        <img data-speed="clamp(2.4)" src='https://images.unsplash.com/photo-1530569673472-307dc017a82d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400' alt=''>
-        <img data-speed="clamp(1.8)" src='https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400' alt=''>
-        <img data-speed="clamp(2.2)" src='https://images.unsplash.com/photo-1551376347-075b0121a65b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400' alt=''>
-        <img data-speed="clamp(1.5)" src='https://images.unsplash.com/photo-1500817487388-039e623edc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400' alt=''>
-      </div>
-    </section>
-
-    <!-- Scroll Animation Section -->
-    <section class="scroll">
-      <span>SCROLL</span>
-      <svg viewBox="0 0 24 24">
-        <line class="st1" x1="12" y1="1" x2="12" y2="22.5" />
-        <line class="st1" x1="12.1" y1="22.4" x2="18.9" y2="15.6" />
-        <line class="st1" x1="11.9" y1="22.4" x2="5.1" y2="15.6" />
-      </svg>
-    </section>
-
-    <section class="spacer" style="height: 100vh;"></section>
-
+  <div class="hero-card third">
+    <img 
+      src="port-images/Gallary-6.jpg" 
+      alt="Porsche Car" 
+      class="image" 
+      width="600" 
+      height="900"
+    />
   </div>
 </div>
 
-<!-- Initialize GSAP and ScrollSmoother -->
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  window.addEventListener("load", function() {
-    const smoothWrapper = document.getElementById("smooth-wrapper");
-    const smoothContent = document.getElementById("smooth-content");
-
-    // Check if the elements exist before initializing ScrollSmoother
-    if (smoothWrapper && smoothContent) {
-      ScrollSmoother.create({
-        wrapper: "#smooth-wrapper",
-        content: "#smooth-content",
-        smooth: 1.2,
-        effects: true
-      });
-    } else {
-      console.error("ScrollSmoother initialization failed: Wrapper or Content not found.");
-    }
-  });
-</script>
-
-<!-- Your additional animation script for floating circles (if any) -->
-<script>
-  // You can add your animation logic here, e.g. for the floating circles or any other custom animations.
-</script>
-
-</body>
+            <div class="hero-component">
+               <div style="-webkit-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-content">
+                  <div class="hero-left-content">
+                     <p class="text-size-small caps">Where Imagination Meets</p>
+                     <p class="text-size-small caps">Strategy to Impactful Results</p>
+                  </div>
+                  <div class="hero-button">
+                     <a data-w-id="f367486e-ac08-4db0-60b7-352914eece19" href="/contact" class="button-hero w-inline-block">
+                        <div class="text-weight-medium">aryanjacob3@gmail.com</div>
+                        <div class="button-line-wrap">
+                           <div style="width:30%" class="button-line-animation"></div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div style="-webkit-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-big-text">
+                  <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-marquee">
+                     <div class="text-size-display">CREATIVE ARTIST</div>
+                     <div class="big-elipse"></div>
+                  </div>
+                  <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-marquee">
+                     <div class="text-size-display">CREATIVE ARTIST</div>
+                     <div class="big-elipse"></div>
+                  </div>
+                  <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-marquee">
+                     <div class="text-size-display">VISUAL DESGINER</div>
+                     <div class="big-elipse"></div>
+                  </div>
+                  <div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-marquee">
+                     <div class="text-size-display">CREATIVE ARTIST</div>
+                     <div class="big-elipse"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="hero-grid"><img src="/images/hero-20background-20grid.svg" loading="lazy" alt="Hero Grid"/></div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="w-layout-blockcontainer container w-container">
+            <div class="text-images-wrapper">
+               <div class="text-images">
+                  <h2 class="heading-2 text-weight-regular">
+                     Elevate your digital 
+                     <div href="#" class="span one"> </div>
+                     presence with distinction, immerse in boundless creativity.I bring digital vision 
+                     <div href="#" class="span two"> </div>
+                      and development that ignites your 
+                     <div href="#" class="span three"> </div>
+                     brand level upwards
+                  </h2>
+               </div>
+               <div class="big-numbers-wrapper">
+                  <div id="w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212e1-7689398e" data-w-id="1af93a0f-02ae-0fb1-39b8-a79c00b212e1" style="opacity:0" class="big-numbers-card">
+                     <div class="big-numbers">3+</div>
+                     <p class="text-size-medium">Years of experience</p>
+                  </div>
+                  <div id="w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212e6-7689398e" data-w-id="1af93a0f-02ae-0fb1-39b8-a79c00b212e6" style="opacity:0" class="big-numbers-card">
+                     <div class="big-numbers">40+</div>
+                     <p class="text-size-medium">Satisfied clients</p>
+                  </div>
+                  <div id="w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212eb-7689398e" data-w-id="1af93a0f-02ae-0fb1-39b8-a79c00b212eb" style="opacity:0" class="big-numbers-card">
+                     <div class="big-numbers">100+</div>
+                     <p class="text-size-medium">Projects delivered</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section-footer">
+         <div class="w-layout-blockcontainer container w-container">
+            <div class="footer-component">
+               <div data-w-id="6919b5fe-8e6e-d3ed-6931-af96b353a9e0" style="opacity:0" class="footer-heading"><img src="/images/black.png" loading="lazy" width="298" sizes="(max-width: 479px) 100vw, 298px" alt="" srcset="/images/black-p-500.png 500w, /images/black-p-800.png 800w, /images/black-p-1080.png 1080w, /images/black.png 1250w"/></div>
+               <div class="footer-links-component">
+                  <div class="footer-social-wrapper"><a href="#" target="_blank" class="footer-social w-inline-block"><img src="/images/logo-instagram-201.svg" loading="lazy" alt="Logo" class="icon-links"/></a></div>
+                  <div class="footer-links-wrapper">
+                     <div class="credits-wrapper">
+                        <p>Copyright © 2025</p>
+                        <a href="https://aryanjacob.in/" target="_blank" class="credits w-inline-block">
+                           <p class="credits-text">Design &amp; Developed by Aryan Jacob | Powered by Joe</p>
+                        </a>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="/js/jquery.js?site=681f04b9ed19056476893945" type="text/javascript"  ></script><script src="/js/webflow.schunk.35b7e515d4d0db18.js" type="text/javascript"></script><script src="/js/webflow.schunk.016a095c0fec2d6f.js" type="text/javascript"></script><script src="/js/webflow-script.js" type="text/javascript"></script>
+   </body>
 </html>

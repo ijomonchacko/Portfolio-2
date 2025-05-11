@@ -245,18 +245,10 @@
 
     </form> 
 
-    <!-- Custom Thank You message -->
-    <div id="form-message" style="display:none; margin-top:20px; color:#00cc66; font-weight:bold; font-size:18px;">
-        Thank you! Your message has been sent. <br> <span style="font-size:14px;">— With regards, Jomon Chacko</span>
-    </div>
-
 </div>
 <!--/Contact Formular -->
 
-<!-- GSAP (if not loaded yet) -->
-<script src="/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
-<!-- JS to handle AJAX submission and GSAP animation -->
+<!-- JS to handle AJAX submission and redirect -->
 <script>
 document.getElementById('contactform').addEventListener('submit', function(e) {
     e.preventDefault();  // Prevent normal form submit
@@ -269,22 +261,8 @@ document.getElementById('contactform').addEventListener('submit', function(e) {
         body: formData
     }).then(response => {
         if (response.ok) {
-            form.reset();
-
-            const message = document.getElementById('form-message');
-            message.style.display = 'block';
-            gsap.fromTo(message, 
-                { opacity: 0, y: 30 },
-                { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
-            );
-
-            // Optional: Hide after 5 seconds
-            setTimeout(() => {
-                gsap.to(message, { opacity: 0, y: 30, duration: 0.8, ease: "power3.in", onComplete: () => {
-                    message.style.display = 'none';
-                }});
-            }, 5000);
-
+            // Redirect to desired website after successful submission
+            window.location.href = "https://example.com";
         } else {
             alert('There was a problem sending the message. Please try again.');
         }
@@ -294,9 +272,6 @@ document.getElementById('contactform').addEventListener('submit', function(e) {
 });
 </script>
 
-                                    </div> 
-                                    <!--/Row -->
-                                    
                                     
                                     <!-- Row -->
                                     <div class="content-row dark-section text-align-center" data-bgcolor="#0c0c0c">
