@@ -251,32 +251,38 @@
 <!-- JS to handle AJAX submission and redirect with transition -->
 <script>
 document.getElementById('contactform').addEventListener('submit', function(e) {
-    e.preventDefault();  // Prevent normal form submit
+    e.preventDefault();
 
     const form = e.target;
     const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
-    // Add transition effect using JS
-    document.body.style.transition = 'opacity 1s ease-out';  // Transition on opacity
-    document.body.style.opacity = '0';  // Start fading out
+    // Fade out effect
+    document.body.style.transition = 'opacity 1s ease-out';
 
     fetch(form.action, {
         method: 'POST',
-        body: formData
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
     }).then(response => {
         if (response.ok) {
-            // Wait for the transition to finish, then redirect to thanks.html
-            setTimeout(function() {
+            // Fade out and then redirect
+            document.body.style.opacity = '0';
+            setTimeout(() => {
                 window.location.href = "thanks.html";
-            }, 1000); // Matches the duration of the fade-out (1s)
+            }, 1000);
         } else {
             alert('There was a problem sending the message. Please try again.');
         }
-    }).catch(error => {
-        alert('There was a problem sending the message. Please try again.');
+    }).catch(() => {
+        alert('There was a problem sending the message. Please check your connection.');
     });
 });
 </script>
+
 
 
                                     
