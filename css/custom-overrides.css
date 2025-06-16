@@ -1,0 +1,8 @@
+/* Custom white text for slide-caption in Macro Photography slide */
+
+/* Target only the Macro Photography slide using its unique image or parent class if possible */
+.clapat-item.design-filter .slide-caption .slide-title,
+.clapat-item.design-filter .slide-caption .slide-date,
+.clapat-item.design-filter .slide-caption .slide-cat {
+    color: #fff !important;
+}
