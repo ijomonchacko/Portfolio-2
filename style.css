@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 Project:	Aryan Jacob Portfolio
 Version:	1.0
-Last change:	01/05/2025
+Last change:	01/05/2026
 Assigned to:	www.aryanjacob.in 
 Primary use:	Showcase Portfolio 
 -------------------------------------------------------------------*/
@@ -2699,17 +2699,18 @@ Primary use:	Showcase Portfolio
 ---------------------------------------------------*/		
 	
 	.clapat-footer {
-		position:relative;
-		width:100%;
-		height:120px;
-		z-index:900;
-		box-sizing:border-box;
-		text-align:center;
-		bottom:0;
-		left:0;
-		overflow:hidden;
-		pointer-events:none;
-	}
+	position:relative;
+	width:100%;
+	height:130px;
+	z-index:900;
+	box-sizing:border-box;
+	text-align:center;
+	bottom:0;
+	left:0;
+        margin-top: 40px; /* give some breathing room */
+	overflow:visible;
+	pointer-events:none;
+}
 	
 	.clapat-footer.fixed {
 		position:fixed;
@@ -4161,3 +4162,18 @@ Primary use:	Showcase Portfolio
 		display:block;
 	}
 }
+
+
+/* Footer overrides for Aryan's Portfolio Fix */
+.clapat-footer .socials-wrap .socials li a, 
+.clapat-footer .socials-wrap .socials-text, 
+.clapat-footer .socials-wrap .socials-icon {
+    color: #fff !important; 
+}
+.clapat-footer .copyright, .clapat-footer .copyright a {
+    color: #fff !important;
+}
+#backtotop span, #backtotop i {
+    color: #fff !important;
+}
+
